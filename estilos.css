@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+h3 {
+	color: #484CD9;
+	font-size: 25px;
+}
+.botonera {
+	width: 1200px;
+	height: 90px;
+	background-color:aqua;
+}
+#cabecera {
+	background-color:beige;
+	width: 1200px;
+	height: 150px;
+}
