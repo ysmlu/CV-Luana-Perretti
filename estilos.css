@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+/*Venis bien, a meterle a ese CSS 💪🏽*/
 
 *{
 	margin: 0px;
@@ -22,10 +23,12 @@ h3 {
 	height: 50px;
 	background-color:aqua;
 	padding-top: 30px;
-	padding-left:30px;
+	padding-left:30px; /* fijate que este padding esta provocando que toda la botonera se mueva hacia la derecha haciendo que la pagina tenga 30 px de mas.
+lo recomenbale es que lo haga sobre el lugar en donde necesitas tener una alineacion a la izquierda */
 }
 nav ul {
 	list-style: none;
+	/* aca!*/ 
 }
 nav ul li {
 	display: inline;
