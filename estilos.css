@@ -9,17 +9,6 @@
 	margin: 0px;
 	padding:0px;
 }
-/*Todavía no modifiqué nada de CSS porque cambié la estructura del HTML, hoy lo hago*/
-
-/*#cabecera {
-	width: 1200px;
-	height: 150px;
-	padding-top: 20px;
-	padding-left:50px;
-	background-color:beige;}
-	/* Recordatorio para mí: En esta cabecera podría llegar a poner una imagen y la propiedad de background-attachment: fixed; */
-
-
 
 /* BOTONERA */
 .nav-botonera {
@@ -58,9 +47,10 @@
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	font-weight: 700;
-	margin: 15px;
+	margin: 40px;
 	border-radius: 3px;
 	align-items: center; /*No se como hacer para que los iconos queden en el centro de la botonera*/
+	transition: 0.3s;
 	
 }
 
@@ -74,17 +64,41 @@
 }
 
 
-
-
-/*.botonera a {
-    text-decoration: none;
-    color: #FFFEF4;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    transition: 0.5s;
-    object-fit: cover;*/
-
-
+/* PRESENTACIÓN */
+.presentacion {
+	display: flex;
+	flex-direction: row;
+	background-color: #000000;
 }
 
+.columna-izq-presentacion {
+	background-color: #000000;
+	padding: 40px 30px 40px 30px;
+	margin: 10px;
+}
+
+.columna-der-presentacion {
+	padding: 40px 0px 0px 20px
+}
+
+.luana {
+	font-family: 'Bricolage Grotesque', sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	color: #00d3aa;
+}
+
+h1 {
+	font-family: 'Bricolage Grotesque', sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	color: #545ff5;
+}
+
+.subtitulo {
+	font-family: 'Bricolage Grotesque', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color: #FFFFFF;
+	padding: 20px 10px 0px 0px;
+}
