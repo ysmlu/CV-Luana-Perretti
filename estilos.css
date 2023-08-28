@@ -237,8 +237,11 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-content: center;
+	align-items: center;
 	background-color:#ff6e00; 
-	padding: 40px
+	padding: 40px;
+	
 }
 
 .titulocontacto { 
@@ -246,6 +249,38 @@ h3 {
 	font-size: 23px;
 	font-weight: 600;
 	color: #FFFFFF;
-	display: flex;
 	
+}
+
+.redes {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #FFFFFF;
+	
+}
+
+/* FOOTER: COPYRIGHT Y DIRECCIÓN */
+.copyright {
+	background-color: #545ff5;
+	padding: 20px 40px 20px 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+
+p { /*este despues cuando ponga todos los hipervínculos dejaran de ser <p>, pasarán a ser <a> */
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	color: #FFFFFF;
+}
+div a {
+	text-decoration: none; 
+	color: #FFFFFF;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
 }
