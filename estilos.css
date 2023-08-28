@@ -104,7 +104,7 @@ h1 {
 .contenedores-sobremi {
 	background-color: #f5ece3;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-direction: row;
 	padding: 40px 120px 50px 10px;
 }
@@ -158,19 +158,6 @@ h4 {
 	margin-bottom: 5px;
 }
 
-h5 {
-	font-family: 'Bricolage Grotesque', sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	color: #000000;
-}
-.epigrafe {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-	font-weight: 400;
-	color: #000000;
-}
-
 ul li {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
@@ -188,11 +175,12 @@ ul li {
 	padding: 15px;
 	display: flex;
 	justify-content: center;
+	
 }
 
 .contenedorproyectos {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	background-color: #f5ece3;
 	padding: 40px 50px 40px 40px;
 	
@@ -204,5 +192,60 @@ ul li {
 	
 }
 
+h5 {
+	font-family: 'Bricolage Grotesque', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	color: #000000;
+}
+.epigrafe {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #000000;
+}
 /* FOOTER: GRACIAS POR VER */
+.barra-color { /*me gustaria hacer que la barra no ocupe todo el ancho pero no se que propiedad aplicar */
+	background-color: #545ff5;
+	height: 6px;
+}
 
+.graciasporver {
+	background-color:#f5ece3; 
+	padding: 40px 30px 30px 40px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+h3 {
+	font-family: 'Bricolage Grotesque', sans-serif;
+	font-size: 33px;
+	font-weight: 600;
+	color: #545ff5;
+}
+
+.interes {
+	font-family: 'Bricolage Grotesque', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color: #545ff5;
+}
+
+/*FOOTER: CONTACTO*/
+.sectioncontacto {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color:#ff6e00; 
+	padding: 40px
+}
+
+.titulocontacto { 
+	font-family: 'Oswald', sans-serif;
+	font-size: 23px;
+	font-weight: 600;
+	color: #FFFFFF;
+	display: flex;
+	
+}
