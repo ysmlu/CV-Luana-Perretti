@@ -1,10 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500;10..48,600&display=swap');
+
 *{
 	margin: 0px;
 	padding:0px;
 }
+/*Todavía no modifiqué nada de CSS porque cambié la estructura del HTML, hoy lo hago*/
+
 /*#cabecera {
 	width: 1200px;
 	height: 150px;
