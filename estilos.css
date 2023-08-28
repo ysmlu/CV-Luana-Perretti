@@ -100,14 +100,14 @@ h1 {
 
 
 /* SECCIÓN SOBRE MI */
-.caja-izq-sobremi {
-	background-color: #f5ece3;
-}
 
-.caja-der-sobremi {
+.contenedores-sobremi {
 	background-color: #f5ece3;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
 }
-
+	
 .h2sobremi {
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
@@ -116,3 +116,25 @@ h1 {
 	padding: 20px 0px 10px 30px
 }
 
+.educacion {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #000000;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+.parrafo {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #000000;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+h4 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #ff6e00;
+}
