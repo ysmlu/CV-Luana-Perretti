@@ -90,15 +90,26 @@
 
 h1 {
 	font-family: 'Bricolage Grotesque', sans-serif;
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 700;
 	color: #545ff5;
 }
 
 .subtitulo {
 	font-family: 'Bricolage Grotesque', sans-serif;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 300;
 	color: #FFFFFF;
-	padding: 20px 10px 0px 0px;
+	padding: 20px 130px 0px 0px;
 }
+
+
+/* SECCIÓN SOBRE MI */
+.h2sobremi {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	color: #545ff5;
+	padding: 20px 0px 10px 30px
+}
+
