@@ -8,26 +8,26 @@
 *{
 	margin: 0px;
 	padding:0px;
-}
+} /* veo que hay muchas tipografías establecidas, una de todas esas, la que más se repite es la general, casi siempre la de cuerpo de lectura. está bueno que esa tipo de lectura la definas en este selector universal para que aplique a toda la página, y cuando tengas que cambiar la font family, por ejemplo, tu nombre, ahí establecés otra distinta. probablemente sí necesites establecer otro cuerpo de texto dado el caso pero con esto podés reducir bastante el css */
 
 /* BOTONERA */
 .nav-botonera {
 	width: 100%;
 	height: 70px;
 	background-color:#545ff5;
-	display: flex;
+	display: flex; /* en mi monitor todavía se ve el nav descentrado, falta una propiedad más de flex, investigalo con el navegador */
 	align-items: center;
 	
 }
 
-.ysmlu{
+.ysmlu{ /* dentro de esta etiqueta no hay nada de texto, todas las propiedades de texto no están haciendo nada */
 	color: #ffffff;
 	font-family: 'Bricolage Grotesque', sans-serif;
 	font-size: 26px;
 	font-weight: 700;
-	width: 40%;
+	width: 40%; /* hay una forma más prolija para no darle un ancho a esta caja, entiendo que es para separarla de la botonera pero si distribuís los objetos con flex desde el padre queda mucho mejor */
 	display: flex;
-	justify-content: flex-start;
+	justify-content: flex-start; /* esto no está haciendo nada */
 	margin-left: 30px;
 }
 
@@ -35,7 +35,7 @@
 .botonera {
 	list-style: none;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-end; /* esto no está haciendo nada */
 }
 
 .botonera a{
@@ -95,7 +95,7 @@ h1 {
 	font-size: 30px;
 	font-weight: 300;
 	color: #FFFFFF;
-	padding: 20px 130px 0px 0px;
+	padding: 20px 130px 0px 0px; /* siempre que un margin o padding superen los 100px probablemente haya una mejor forma de resolverlo, en este caso podés probar con max-width */
 }
 
 
@@ -106,12 +106,13 @@ h1 {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
-	padding: 40px 120px 50px 10px;
+	padding: 40px 120px 50px 10px; /* acá también hay mucho padding, probablemente sólo necesites el top y bottom, si necesitás establecer el espacio en medio de las dos cajas internas podés usar la propiedad de gap, que establece lo que podríamos decir el ancho de la calle, se utiliza en píxeles, también con eso vas a poder quitar el space-arround por otro que te permita centrar mejor*/
 }
 .caja-izq-sobremi {
-	margin-right: 350px;
+	margin-right: 350px; /* esto es un montón */
 	display: flex;
 	flex-direction: column;
+	/* acá también amerita un max-width para mejorar la longitud del texto */
 }
 .caja-der-sobremi {
 	display: flex;
@@ -180,7 +181,7 @@ ul li {
 
 .contenedorproyectos {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-around; /* acá de nuevo, es más conveniente el gap y no el space arround */
 	background-color: #f5ece3;
 	padding: 40px 50px 40px 40px;
 	
@@ -189,7 +190,7 @@ ul li {
 .columna-der-proyectos {
 	display: flex;
 	flex-direction: column;
-	
+	/* otro lugar con líneas de texto muy largas, necesitamos limitar el ancho de alguna forma */
 }
 
 h5 {
