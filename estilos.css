@@ -316,6 +316,7 @@ div a:active {
 	justify-content: space-between;
 	align-content: center;
 	align-items: center;
+	column-gap: 3%;
 }
 
 p {
