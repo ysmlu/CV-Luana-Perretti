@@ -24,7 +24,7 @@
 .ysmlu{
 	display: flex;
 	align-items: center;
-	margin-left: 40px;
+	margin-left: 50px;
 }
 
 .botonera {
@@ -74,17 +74,17 @@
 
 .columna-izq-presentacion {
 	background-color: #000000;
-	padding: 40px 30px 40px 30px;
+	padding: 40px 40px 40px 50px;
 	margin: 10px;
 }
 
 .columna-der-presentacion {
-	padding: 40px 0px 0px 20px
+	padding: 35px 10px 10px 20px;
 }
 
 .luana {
 	font-family: 'Bricolage Grotesque', sans-serif;
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 700;
 	color: #00d3aa;
 }
@@ -94,6 +94,7 @@ h1 {
 	font-size: 60px;
 	font-weight: 700;
 	color: #545ff5;
+	max-width: 50%;
 }
 
 .subtitulo {
@@ -101,7 +102,8 @@ h1 {
 	font-size: 30px;
 	font-weight: 300;
 	color: #FFFFFF;
-	padding: 20px 130px 0px 0px; /* siempre que un margin o padding superen los 100px probablemente haya una mejor forma de resolverlo, en este caso podés probar con max-width */
+	padding-top: 20px; 
+	max-width: 75%; /* Le agregué esta propiedad para que no quedara tan larga la línea, debería hacer que sea más corta aún? */
 }
 
 
@@ -110,15 +112,19 @@ h1 {
 .contenedores-sobremi {
 	background-color: #f5ece3;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-direction: row;
-	padding: 40px 120px 50px 10px; /* acá también hay mucho padding, probablemente sólo necesites el top y bottom, si necesitás establecer el espacio en medio de las dos cajas internas podés usar la propiedad de gap, que establece lo que podríamos decir el ancho de la calle, se utiliza en píxeles, también con eso vas a poder quitar el space-arround por otro que te permita centrar mejor*/
+	padding: 50px 10px 50px 50px; /* acá también hay mucho padding, probablemente sólo necesites el top y bottom, si necesitás establecer el espacio en medio de las dos cajas internas podés usar la propiedad de gap, que establece lo que podríamos decir el ancho de la calle, se utiliza en píxeles, también con eso vas a poder quitar el space-arround por otro que te permita centrar mejor*/
+	/*display: grid;
+  	gap: 10px; /* Espacio de 10 píxeles entre columnas */
+	
 }
 .caja-izq-sobremi {
-	margin-right: 350px; /* esto es un montón */
 	display: flex;
 	flex-direction: column;
-	/* acá también amerita un max-width para mejorar la longitud del texto */
+	max-width: 45%;
+	margin-left: 10px;
+	/* acá también agregué un max-width para mejorar la longitud del texto */
 }
 .caja-der-sobremi {
 	display: flex;
@@ -130,39 +136,36 @@ h1 {
 	font-size: 40px;
 	font-weight: 600;
 	color: #545ff5;
-	padding: 0px 0px 10px 50px
+	padding-bottom: 10px;
+	max-width: 50%;
 }
 
-.educacion {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-	font-weight: 400;
-	color: #000000;
-	margin-left: 50px;
-	margin-top: 30px;
-}
 .parrafo {
 	font-size: 15px;
 	font-weight: 400;
 	color: #000000;
-	margin-left: 50px;
 	margin-top: 10px;
 }
+
+.sectoreducacion {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #000000;
+	margin-left: 0px;
+	margin-top: 30px;
+}
+
 .titulosnaranja {
 	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
 	font-weight: 700;
 	color: #ff6e00;
+	margin-top: 30px;
 	margin-bottom: 5px;
 }
 
-h4 {
-	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
-	font-weight: 700;
-	color: #545ff5;
-	margin-bottom: 5px;
-}
+
 
 ul li {
 	font-family: 'Open Sans', sans-serif;
@@ -204,6 +207,15 @@ h5 {
 	font-weight: 600;
 	color: #000000;
 }
+
+h4 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	color: #545ff5;
+	margin-bottom: 5px;
+}
+
 .epigrafe {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
