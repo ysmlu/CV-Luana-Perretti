@@ -5,21 +5,20 @@
 	<meta charset="utf-8">
 	<title>Luana Perretti - CV</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="img/icono-solapa.svg"> <!-- quise agregar el favicon pero no funciona, google me indica que se coloca así. El SVG no pude ponerle fondo transparente, no encontré la forma -->
 </head>
 
 <!-- Este trabajo es maravilloso, vas muy bien! Vamos a dejarte unos desafíos y contestar las preguntas
 	1. Siempre que lo veas necesario, una class y un id siempre sirve, capaz otra cosa que está buena es establecer los estilos primero y agregar varias clases a una etiqueta
 	2. en tu caso, no están mal la candidad de clases que pusiste, si las necesitás dejalas ahí
 	3. La imagen probablemente quede mejor como background image porque cuando veamos responsive no va a molestar.
-	4. Un desafío fácil es buscar información sobre qué es un favicon y cómo agregarlo
 	5. Otro desafío es buscar sobre tamaños tipográficos en em, es la unidad de medida ideal para las fuentes, pero si no lo lográs podés seguir usando px; buscalo como "em font size"
 	6. Si querés, podés buscar sobre como usar un iframes, para incrustar miniaturas de otras redes sociales en tu página, como hicimos en el campus con el post de instagram -->
 <body>
 	<header>
 		<nav class="nav-botonera">
 			<div class="ysmlu">
-			<img src="img/logoysmlu.jpg" width="145" height="40" alt=""/>
-			<!-- Agregar SVG, logo -->
+			<img src="img/logobotonera-ysmlu.svg" width="145" height="40" alt="Logo de botonera"/> <!-- Agregué este SVG espero las medidas estén bien -->
 			</div>
 			<ul class="botonera">
 				<li><a href="#sobremi" target="_self">SOBRE MI</a></li>
@@ -32,8 +31,10 @@
 	
 	<!-- MAIN -->
 	<main>
+		<div id="backgroundmujer">
 		<img src="img/portadamujer.jpg" width="1920" height="440" alt="Portada mujer"/>
 		<!-- De esta fotografía de la mujer, ¿Están bien las medidas? no sé como tener en cuenta el tamaño en otros monitores para que se adapte, por eso le puse 1920 de ancho, tendría que tener una etiqueta <background-image>? --> <!-- exactamente, deberías cambiar la img por un div y llamarlo con un id desde css -->
+		</div>
 		<div class="presentacion">
 			<div class="columna-izq-presentacion">
 			<img src="img/fotodeperfil.jpg" width="278px" height="350px" alt="Mi foto de perfil"/>
