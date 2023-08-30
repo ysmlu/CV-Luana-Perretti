@@ -1,9 +1,9 @@
 # Luana-Perretti
-### Consultas 28/08 - 21:25pm
+### Consultas 30/08 - 17:56pm
 
-Hola profes, en html y en css dejé algunos comentarios/consultas, otras cosas son guías para mí. Pero quería hacer 3 consultar principales:
-1) Se puede usar "class" en las etiquetas "p" y "h1", por ejemplo? Ya que tengo varias etiquetas "p" pero con diferentes propiedades y necesito diferenciarlas.
-2) Observando mí trabajo veo que tengo muchas etiquetas con "class", no sé de que otra forma podría reducir la cantidad, tal vez escribiendo "la ruta", por ejemplo, "ul li" que poniendo .listaredes? Si podrían guiarme en cuanto a las class se los agradezco.
-3) Mi última consulta es: la imagen que coloqué en la parte superior: ¿Tendría que estar colocada como "background-image" ?, y me dí cuenta que en mi DW la imagen es mucho más ancha que la botonera. No sé como controlar eso, lo mismo me sucede con las columnas. No logro distinguir que propiedad aplicar, a pesar de que probé varias.
-¡Saludos!
-pd: los indentados aún no los corregí.
+Hola profes, ya estuve realizando varias correcciones, algunas correcciones de Aimé todavía no las borré para acordarme. Aún no logro controlar del todo el espacio entre las columnas. Aimé me recomendó aplicar una familia tipográfica en el selector universal, lo probé pero si borro las propiedades de algún párrafo se borra y no se aplica la del selector universal.
+Los links de contacto hay 2 que no funcionan (el de LinkedIn y el de Instagram). Y eso que pegué el URL completo :/ (o al menos eso creo).
+- Dejé algunos comentarios en el html y css, quise agregar también un icono en la pestaña para que no quede "el mundito" pero no se aplicó, no pude guardar el SVG con fondo transparente.
+- Tampoco logré hacer que la imagen con la mujer sea un background-image, ya que es más ancha y no coincide con el ancho de la botonera.
+etc...
+Saludos y gracias!
