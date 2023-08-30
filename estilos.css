@@ -42,7 +42,8 @@
 	font-weight: 700;
 	margin: 40px;
 	transition: 0.2s;
-	border-radius: 3px;
+	padding: 10px;
+	border-radius: 10px;
 	/* No sé como hacer para que los botones al asomar el cursor haya más borde verde agua*/
 }
 
@@ -59,9 +60,9 @@
 /* PORTADA MUJER */
 #backgroundmujer {
 	background-image: url("img/portadamujer.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
 	/* La imagen es muy ancha, pero no sé como colocar correctamente el background-image, le agregué un div con el id como me dijeron en la corrección. Pero sigue igual.*/
 }
 
@@ -297,6 +298,7 @@ div a {
 	font-weight: 300;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
+	transition: 0.3s;
 }
 
 div a:hover {
