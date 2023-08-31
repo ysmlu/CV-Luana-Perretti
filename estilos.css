@@ -42,8 +42,8 @@
 	font-weight: 700;
 	margin: 40px;
 	transition: 0.2s;
-	padding: 10px;
-	border-radius: 10px;
+	padding: 8px;
+	border-radius: 9px;
 }
 
 .botonera a:hover {
@@ -70,12 +70,13 @@
 	display: flex;
 	flex-direction: row;
 	background-color: #000000;
+	padding: 20px;
 }
 
 .columna-izq-presentacion {
 	background-color: #000000;
-	padding: 40px 40px 40px 50px;
-	margin: 10px;
+	padding: 50px;
+	
 }
 
 .columna-der-presentacion {
@@ -99,11 +100,11 @@ h1 {
 
 .subtitulo {
 	font-family: 'Bricolage Grotesque', sans-serif;
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 300;
 	color: #FFFFFF;
 	padding-top: 20px;
-	max-width: 75%;
+	max-width: 55%;
 }
 
 
@@ -112,20 +113,16 @@ h1 {
 .contenedores-sobremi {
 	background-color: #f5ece3;
 	display: flex;
-	justify-content:space-between;
 	flex-direction: row;
-	padding: 50px 10px 50px 50px; /*la propiedad de gap, que establece lo que podríamos decir el ancho de la calle, se utiliza en píxeles, también con eso vas a poder quitar el space-arround por otro que te permita centrar mejor*/
-	
-	/*gap: 70%; quise aplicar esta propiedad para juntar más las columnas pero probé y no me sale jaja */
-	
-	
+	column-gap: 100px;
+	padding: 50px 50px 60px 50px;
+	justify-content: center;
 }
 .caja-izq-sobremi {
 	display: flex;
 	flex-direction: column;
-	max-width: 45%;
-	margin-left: 10px;
-	/* acá también agregué un max-width para mejorar la longitud del texto */
+	max-width: 40%;
+	margin: 0px 70px 0px 10px;
 }
 .caja-der-sobremi {
 	display: flex;
@@ -191,12 +188,15 @@ ul li {
 .contenedorproyectos {
 	display: flex;
 	flex-direction: row;
-	column-gap: 50%; /* acá de nuevo, es más conveniente el gap y no el space arround */
 	background-color: #f5ece3;
-	padding: 40px 50px 40px 40px;
-	
+	column-gap: 100px;
+	padding: 50px;
+	justify-content: center;
 }
 
+.imagenesproyectos{
+	max-width: 45%;
+}
 .columna-izq-proyectos {
 	display: flex;
 	flex-direction: column;
