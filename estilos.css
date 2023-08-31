@@ -44,7 +44,6 @@
 	transition: 0.2s;
 	padding: 10px;
 	border-radius: 10px;
-	/* No sé como hacer para que los botones al asomar el cursor haya más borde verde agua*/
 }
 
 .botonera a:hover {
@@ -63,7 +62,7 @@
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center;
-	/* La imagen es muy ancha, pero no sé como colocar correctamente el background-image, le agregué un div con el id como me dijeron en la corrección. Pero sigue igual.*/
+	/* La imagen es muy ancha, pero no supe como colocar correctamente el background-image, le agregué un div con el id como me dijeron en la corrección. Pero sigue igual.*/
 }
 
 /* PRESENTACIÓN */
@@ -103,8 +102,8 @@ h1 {
 	font-size: 30px;
 	font-weight: 300;
 	color: #FFFFFF;
-	padding-top: 20px; 
-	max-width: 75%; /* Le agregué esta propiedad para que no quedara tan larga la línea, debería hacer que sea más corta aún? */
+	padding-top: 20px;
+	max-width: 75%;
 }
 
 
@@ -115,7 +114,7 @@ h1 {
 	display: flex;
 	justify-content:space-between;
 	flex-direction: row;
-	padding: 50px 10px 50px 50px; /* acá también hay mucho padding, probablemente sólo necesites el top y bottom, si necesitás establecer el espacio en medio de las dos cajas internas podés usar la propiedad de gap, que establece lo que podríamos decir el ancho de la calle, se utiliza en píxeles, también con eso vas a poder quitar el space-arround por otro que te permita centrar mejor*/
+	padding: 50px 10px 50px 50px; /*la propiedad de gap, que establece lo que podríamos decir el ancho de la calle, se utiliza en píxeles, también con eso vas a poder quitar el space-arround por otro que te permita centrar mejor*/
 	
 	/*gap: 70%; quise aplicar esta propiedad para juntar más las columnas pero probé y no me sale jaja */
 	
@@ -195,7 +194,6 @@ ul li {
 	column-gap: 50%; /* acá de nuevo, es más conveniente el gap y no el space arround */
 	background-color: #f5ece3;
 	padding: 40px 50px 40px 40px;
-	
 }
 
 /* .columna-izq-proyectos {
@@ -206,7 +204,6 @@ ul li {
 	display: flex;
 	flex-direction: column;
 	max-width: 30%;
-	/* otro lugar con líneas de texto muy largas, necesitamos limitar el ancho de alguna forma */
 }
 
 h5 {
@@ -231,8 +228,9 @@ h4 {
 	font-weight: 400;
 	color: #000000;
 }
+
 /* FOOTER: GRACIAS POR VER */
-.barra-color { /*me gustaria hacer que la barra no ocupe todo el ancho pero no se que propiedad aplicar */
+.barra-color {
 	background-color: #545ff5;
 	height: 6px;
 }
