@@ -194,11 +194,14 @@ ul li {
 	column-gap: 50%; /* acá de nuevo, es más conveniente el gap y no el space arround */
 	background-color: #f5ece3;
 	padding: 40px 50px 40px 40px;
+	
 }
 
-/* .columna-izq-proyectos {
+.columna-izq-proyectos {
+	display: flex;
+	flex-direction: column;
 
-} */
+}
 
 .columna-der-proyectos {
 	display: flex;
