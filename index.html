@@ -6,12 +6,7 @@
 	<link href="estilos.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="img/icono-solapa.svg">
 </head>
-	<!--3. La imagen probablemente quede mejor como background image porque cuando veamos responsive no va a molestar.
-	5. Otro desafío es buscar sobre tamaños tipográficos en em, es la unidad de medida ideal para las fuentes, pero si no lo lográs podés seguir usando px; buscalo como "em font size"
-	6. Si querés, podés buscar sobre como usar un iframes, para incrustar miniaturas de otras redes sociales en tu página, como hicimos en el campus con el post de instagram 
-	3.Con las columnas proba en usar justify-content: space-around; o justify-content: center; y jugar con los padding
-	a meterle que venis bien!-->
-	
+	<!--Si querés, podés buscar sobre como usar un iframes, para incrustar miniaturas de otras redes sociales en tu página, como hicimos en el campus con el post de instagram-->
 <body>
 	<header>
 		<nav class="nav-botonera">
@@ -29,7 +24,6 @@
 <main>
 		<div id="backgroundmujer">
 			<img src="img/portadamujer.jpg" width="1920" height="440" alt="Portada mujer"/>
-			<!-- deberías cambiar la img por un div y llamarlo con un id desde css -->
 		</div>
 		<article class="presentacion">
 			<div class="columna-izq-presentacion">
@@ -94,31 +88,33 @@
 		<section class="#proyectosdestacados" id="proyectosdestacados">
 			<h2 class="tituloproyecto">- Proyectos destacados -</h2>
 			<article class="contenedorproyectos">
-				<div class="imagenesproyectos">
-					<img src="img/waikiki.jpg" width="630" height="380" alt="Proyecto Waikiki"/> 
-					<img src="img/discord.jpg" width="630" height="380" alt="Proyecto Discord"/> 
-					<img src="img/huerta.jpg" width="630" height="380" alt="Proyecto Huerta"/> 
-					<img src="img/dermisache.jpg" width="630" height="380" alt="Proyecto Dermisache"/>
+				<div class="fila-sup-proyectos">
+					<div>
+						<img src="img/waikiki.jpg" width="630" height="380" alt="Proyecto Waikiki"/>
+						<h4>WAIKIKI - 2023</h4>
+						<h5>/Festival de Surf</h5>
+						<p class="epigrafe">Proyecto realizado para Taller de Diseño 3.  Creación de la Identidad Visual para el desarrollo del festival en el Centro Cultural de Recoleta.</p>
+					</div>
+					<div>
+						<img src="img/discord.jpg" width="630" height="380" alt="Proyecto Discord"/> 
+						<h4>DISCORD - 2023</h4>
+						<h5>/Bebida energizante</h5>
+						<p class="epigrafe">Diseño de envases para 4 sabores de bebida enlatada y energizante de la reconocida plataforma Discord®.</p>
+					</div>
 				</div>
-				<div class="columna-der-proyectos">
-					<h4>WAIKIKI - 2023</h4>
-					<h5>/Festival de Surf</h5>
-					<p class="epigrafe">Proyecto realizado para Taller de Diseño 3.  Creación de la Identidad Visual para el desarrollo del festival en el Centro Cultural de Recoleta.</p>
-				<div>
-					<h4>DISCORD - 2023</h4>
-					<h5>/Bebida energizante</h5>
-					<p class="epigrafe">Diseño de envases para 4 sabores de bebida enlatada y energizante de la reconocida plataforma Discord®.</p>
-				</div>
-				<div>
-					<h4>HUERTA - 2022</h4>
-					<h5>/Programa PRO Huerta</h5>
-					<p class="epigrafe">Infografía y calendario de cultivo sobre plantas aromáticas y medicinales de huerta para el INTA.</p>
-				</div>
-				<div>
-					<h4>DERMISACHE - 2021</h4>
-					<h5>/Exposición MALBA</h5>
-					<p class="epigrafe">Desarrollo de arquigrafías, afiches y catálogos para la muestra "Porque ¡yo escribo!", de Mirtha Dermisache.</p>
-				</div>
+				<div class="fila-inf-proyectos">
+					<div>
+						<img src="img/huerta.jpg" width="630" height="380" alt="Proyecto Huerta"/>
+						<h4>HUERTA - 2022</h4>
+						<h5>/Programa PRO Huerta</h5>
+						<p class="epigrafe">Infografía y calendario de cultivo sobre plantas aromáticas y medicinales de huerta para el INTA.</p>
+					</div>
+					<div>
+						<img src="img/dermisache.jpg" width="630" height="380" alt="Proyecto Dermisache"/>
+						<h4>DERMISACHE - 2021</h4>
+						<h5>/Exposición MALBA</h5>
+						<p class="epigrafe">Desarrollo de arquigrafías, afiches y catálogos para la muestra "Porque ¡yo escribo!", de Mirtha Dermisache.</p>
+					</div>
 				</div>
 			</article>
 		</section>

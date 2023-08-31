@@ -8,8 +8,7 @@
 *{
 	margin: 0px;
 	padding:0px;
-	font-family: 'Open Sans', sans-serif;
-} /* veo que hay muchas tipografías establecidas, una de todas esas, la que más se repite es la general, casi siempre la de cuerpo de lectura. está bueno que esa tipo de lectura la definas en este selector universal para que aplique a toda la página, y cuando tengas que cambiar la font family, por ejemplo, tu nombre, ahí establecés otra distinta. probablemente sí necesites establecer otro cuerpo de texto dado el caso pero con esto podés reducir bastante el css */
+} 
 
 /* BOTONERA */
 .nav-botonera {
@@ -118,12 +117,14 @@ h1 {
 	padding: 50px 50px 60px 50px;
 	justify-content: center;
 }
+
 .caja-izq-sobremi {
 	display: flex;
 	flex-direction: column;
 	max-width: 40%;
 	margin: 0px 70px 0px 10px;
 }
+
 .caja-der-sobremi {
 	display: flex;
 	flex-direction: column;
@@ -189,24 +190,17 @@ ul li {
 	display: flex;
 	flex-direction: row;
 	background-color: #f5ece3;
-	column-gap: 100px;
-	padding: 50px;
+	padding: 80px 60px 0px 60px;
 	justify-content: center;
+	
 }
 
-.imagenesproyectos{
-	max-width: 45%;
-}
-.columna-izq-proyectos {
-	display: flex;
-	flex-direction: column;
-
+.fila-sup-proyectos{
+	padding-left: 40px;
 }
 
-.columna-der-proyectos {
-	display: flex;
-	flex-direction: column;
-	max-width: 30%;
+.fila-inf-proyectos {
+	padding-right: 40px;
 }
 
 h5 {
@@ -221,8 +215,8 @@ h4 {
 	font-size: 20px;
 	font-weight: 700;
 	color: #545ff5;
+	margin-top: 10px;
 	margin-bottom: 5px;
-	margin-top: 40px;
 }
 
 .epigrafe {
@@ -230,6 +224,9 @@ h4 {
 	font-size: 15px;
 	font-weight: 400;
 	color: #000000;
+	margin-top: 5px;
+	margin-bottom: 80px;
+	max-width: 50%;
 }
 
 /* FOOTER: GRACIAS POR VER */
@@ -268,12 +265,11 @@ h3 {
 .sectioncontacto {
 	display: flex;
 	flex-direction: row;
-	/*justify-content: space-between;*/
 	align-content: center;
 	align-items: center;
 	background-color:#ff6e00; 
 	padding: 0px 0px 40px 40px;
-	column-gap: 10%;
+	column-gap: 100px;
 }
 
 .titulocontacto { 
@@ -319,7 +315,6 @@ div a:active {
 	justify-content: space-between;
 	align-content: center;
 	align-items: center;
-	column-gap: 3%;
 }
 
 p {
