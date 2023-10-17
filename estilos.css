@@ -57,11 +57,12 @@
 
 /* PORTADA MUJER */
 #backgroundmujer {
-	background-position: center;
+	background-image: url("img/portadamujer.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
+	background-size: 100%;
+	background-position: center;
+	/*width: 100%;
+	height: 100%;*/
 } /*PARA AIMÉ: no estoy entendiendo como hacer para que la imagen ocupe correctamente todo el ancho y alto, si le agrego background-image es como que se me duplica la imagen y no sé como resolverlo, abajo estuve probando sólo con la imagen pero al aplicar width/height la tipografía veo todo super chico en cuanto a tamaños tipográficos
 Otro problema que me pasa es que el mismo <div> me genera un pequeño borde transparente abajo y no se como eliminarlo.*/
 
@@ -74,16 +75,17 @@ Otro problema que me pasa es que el mismo <div> me genera un pequeño borde tran
 
 /* PRESENTACIÓN */
 .presentacion {
+	background-color: #050505;
+	padding: 20px;
 	display: flex;
 	flex-direction: row;
-	background-color: #000000;
-	padding: 20px;
+	align-items: center;
+	justify-content: center;
 }
 
+
 .columna-izq-presentacion {
-	background-color: #000000;
 	padding: 50px;
-	
 }
 
 .columna-der-presentacion {
