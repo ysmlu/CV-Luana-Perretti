@@ -58,9 +58,8 @@
 /* PORTADA MUJER */
 #backgroundmujer {
 	background-image: url("img/portadamujer.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
 	background-position: center;
+	width: 100%;
 	/* La imagen es muy ancha, pero no supe como colocar correctamente el background-image, le agregué un div con el id como me dijeron en la corrección. Pero sigue igual.*/
 }
 
@@ -227,6 +226,16 @@ h4 {
 	margin-bottom: 80px;
 	max-width: 60%;
 }
+
+img:hover { 
+	transform: scale(1.1);
+	transition: transform 0.3s ease;
+} 
+/*Acá aplique una pequeña transición a las imágenes de mis proyectos destacados pero no se como hacer para que NO se aplique a la imagen superior de la mujer*/
+#backgroundmujer img:not(:hover) {
+	transform: scale(1);
+	transition: none;
+} /*Lo intenté de esta forma pero no pude*/
 
 /* FOOTER: GRACIAS POR VER */
 .barra-color {
