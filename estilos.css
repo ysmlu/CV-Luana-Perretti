@@ -57,11 +57,20 @@
 
 /* PORTADA MUJER */
 #backgroundmujer {
-	background-image: url("img/portadamujer.jpg");
 	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 100%;
-	/* La imagen es muy ancha, pero no supe como colocar correctamente el background-image, le agregué un div con el id como me dijeron en la corrección. Pero sigue igual.*/
-}
+	height: 100%;
+} /*PARA AIMÉ: no estoy entendiendo como hacer para que la imagen ocupe correctamente todo el ancho y alto, si le agrego background-image es como que se me duplica la imagen y no sé como resolverlo, abajo estuve probando sólo con la imagen pero al aplicar width/height la tipografía veo todo super chico en cuanto a tamaños tipográficos
+Otro problema que me pasa es que el mismo <div> me genera un pequeño borde transparente abajo y no se como eliminarlo.*/
+
+/*.img_mujer_ilustraciones {
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}*/
 
 /* PRESENTACIÓN */
 .presentacion {
@@ -227,15 +236,12 @@ h4 {
 	max-width: 60%;
 }
 
-img:hover { 
+/*img:hover { 
 	transform: scale(1.1);
 	transition: transform 0.3s ease;
-} 
+} */
 /*Acá aplique una pequeña transición a las imágenes de mis proyectos destacados pero no se como hacer para que NO se aplique a la imagen superior de la mujer*/
-#backgroundmujer img:not(:hover) {
-	transform: scale(1);
-	transition: none;
-} /*Lo intenté de esta forma pero no pude*/
+
 
 /* FOOTER: GRACIAS POR VER */
 .barra-color {
