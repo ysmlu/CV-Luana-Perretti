@@ -118,12 +118,15 @@ h1 {
 
 
 /* SECCIÓN SOBRE MI */
+main {
+	background-color:#f5ece3;
+}
 
 .contenedores-sobremi {
-	background-color: #f5ece3;
+	/*background-color: #f5ece3;*/
 	display: flex;
 	flex-direction: row;
-	column-gap: 10%;
+	column-gap: 10%; /* ¿Se puede usar esta propiedad? */
 	padding: 50px 50px 70px 50px;
 	justify-content: center; /*acá si pude centrar todo el contenido :/ */
 }
@@ -188,7 +191,7 @@ ul li {
 	font-size: 35px;
 	font-weight: 600;
 	color: #f5ece3;
-	padding: 15px 0px 15px 0px;
+	padding: 20px 0px 20px 0px;
 	display: flex;
 	justify-content: center;
 }
@@ -196,24 +199,17 @@ ul li {
 .contenedorproyectos {
 	display: flex;
 	flex-direction: row;
-	background-color: #f5ece3;
 	padding: 80px 70px 0px 70px;
 	justify-content: center;
 }
 
-.fila-sup-proyectos{
-	padding-left: 40px;
-}
-
-.fila-inf-proyectos {
-	padding-right: 40px;
-}
 
 h5 {
 	font-family: 'Bricolage Grotesque', sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	color: #000000;
+	max-width: 60%;
 }
 
 h4 {
@@ -223,6 +219,7 @@ h4 {
 	color: #545ff5;
 	margin-top: 10px;
 	margin-bottom: 5px;
+	max-width: 60%;
 }
 
 .epigrafe {
@@ -235,10 +232,10 @@ h4 {
 	max-width: 60%;
 }
 
-/*img:hover { 
+img:hover { 
 	transform: scale(1.1);
 	transition: transform 0.3s ease;
-} */
+}
 /*Acá aplique una pequeña transición a las imágenes de mis proyectos destacados pero no se como hacer para que NO se aplique a la imagen superior de la mujer*/
 
 
@@ -248,9 +245,9 @@ h4 {
 	height: 6px;
 }
 
-.graciasporver {
-	background-color:#f5ece3; 
-	padding: 25px 30px 30px 40px;
+.graciasporver { 
+	background-color:#f5ece3;
+	padding: 35px 30px 45px 40px;
 	display: flex;
 	flex-direction: column;
 }
@@ -271,17 +268,18 @@ h3 {
 	color: #545ff5;
 	display: flex;
 	justify-content: center;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 /*FOOTER: CONTACTO*/
 .sectioncontacto {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
+	/*justify-content: center;*/
 	background-color:#ff6e00; 
-	padding: 0px 0px 40px 40px;
-	column-gap: 100px;
+	padding-bottom: 40px;
+	column-gap: 6%; /*Se puede aplicar el column-gap por porcentajes?*/
 }
 
 .titulocontacto { 
@@ -289,7 +287,7 @@ h3 {
 	font-size: 25px;
 	font-weight: 600;
 	color: #FFFFFF;
-	display: flex;
+	padding: 15px 0px 0px 50px;
 }
 
 .redes {
@@ -297,7 +295,7 @@ h3 {
 	font-size: 15px;
 	font-weight: 600;
 	color: #FFFFFF;
-	padding-top: 30px;
+	padding-top: 35px;
 	
 }
 
@@ -321,12 +319,12 @@ div a:active {
 /* FOOTER: COPYRIGHT Y DIRECCIÓN */
 .copyright {
 	background-color: #545ff5;
-	padding: 20px 40px 20px 40px;
+	padding: 20px 50px 20px 50px; 
+	column-gap: 5%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-content: center;
-	align-items: center;
+
 }
 
 p {
