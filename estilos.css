@@ -80,7 +80,7 @@ Otro problema que me pasa es que el mismo <div> me genera un pequeño borde tran
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; /*todos estos atributos no se porqué no se están aplicando, quiero centrar la imagen y los textos de la zona de presentación como me dijeron pero no me estaría dejando, intenté agregar otro <div> o cambiando el html pero tampoco pude*/
 }
 
 
@@ -123,23 +123,20 @@ h1 {
 	background-color: #f5ece3;
 	display: flex;
 	flex-direction: row;
-	column-gap: 100px;
-	padding: 50px 50px 60px 50px;
-	justify-content: center;
+	column-gap: 10%;
+	padding: 50px 50px 70px 50px;
+	justify-content: center; /*acá si pude centrar todo el contenido :/ */
 }
 
 .caja-izq-sobremi {
 	display: flex;
 	flex-direction: column;
 	max-width: 38%;
-	margin: 0px 70px 0px 10px;
 }
 
 .caja-der-sobremi {
 	display: flex;
 	flex-direction: column;
-	margin-right: 80px;
-	padding-right: 80px;
 }
 
 .h2sobremi {
