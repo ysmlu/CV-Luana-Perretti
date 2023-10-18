@@ -10,6 +10,7 @@
 	padding:0px;
 } 
 
+
 /* BOTONERA */
 .nav-botonera {
 	width: 100%;
@@ -115,6 +116,42 @@ h1 {
 	padding-top: 20px;
 	max-width: 65%;
 }
+
+/*ANIMACIÓN - PRESENTACIÓN*/ /*agregué esta animación que encontré y me pareció interesante, todavía me faltan aplicar propiedades al ancho de la página para que no se mueva de lugar*/
+.rotate-animation {
+    animation: rotate-animation 25s infinite linear;
+}
+
+.bottom125px {
+    bottom: 125px;
+}
+
+.right130px {
+    right: 130px;
+}
+
+.position-absolute {
+    position: absolute!important;
+}
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(180deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.rotate-animation {
+    animation: rotate-animation 15s infinite linear
+}
+
 
 
 /* SECCIÓN SOBRE MI */
