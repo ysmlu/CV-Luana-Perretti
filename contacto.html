@@ -23,23 +23,37 @@
 	</header>
 	<main>
 		<section class="contenedor-formulario">
-			<div class="pregunta-formulario">
+			<section class="pregunta-formulario">
 				<h2> ¿Te gustaría  trabajar juntos en un proyecto?</h2>
 				
-			</div>
-			<div class="zona-formulario">
+			</section>
+			<section class="zona-formulario">
 					<h2 class="h2sobremi">Contactame</h2>
 					<h4 class="subtitulo-form">Dejá tus consultas en el siguiente formulario</h4>
-				<form method="post" action="" target="_blank" enctype="text/plain">
-					
-					
-					<div class="column-izq-form">
-						<label for="apellido_nombre">Apellido y nombre</label>
-						<input type="text" name="apellido_nombre" id="apellido_nombre" maxlenght="50" placeholder="Escribí tu nombre completo" required>
-					</div>
+				<form method="post" action="mailto:luli.perretti@gmail.com?subject='Email enviado desde el formulario'" target="_blank" enctype="text/plain">
+					<div class="items-formulario">
+						<div class="columna-izq-form">
+							<label for="apellido_nombre">APELLIDO Y NOMBRE</label>
+							<input type="text" name="apellido_nombre" id="apellido_nombre" maxlenght="50" placeholder="Escribí tu nombre completo" required>
 
+							<label for="email">CORREO ELECTRÓNICO</label>
+							<input type="email" name="email" id="email" maxlenght="50" placeholder="Escribí un correo electrónico" required>
+						</div>
+						<div class="columna-der-form">
+							<label for="proyecto_empresa">PROYECTO O EMPRESA</label>
+							<input type="text" name="proyecto_empresa" id="proyecto_empresa" maxlenght="30" placeholder="Nombre del proyecto o de la empresa" required>
+
+							<label for="telefono">TELÉFONO</label>
+							<input type="tel" name="telefono" id="telefono" placeholder="(011) ____ ____">
+						</div>
+					</div>
+						<div class="mensaje-form"> 
+							<label for="mensaje">MENSAJE</label>
+							<textarea name="mensaje" id="mensaje">Escribí las dudas o consultas</textarea>
+						</div>
+					<input type="submit" class="submit">
 				</form>
-			</div>
+			</section>
 		</section>
 	</main>
 	<footer> 
