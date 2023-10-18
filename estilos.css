@@ -19,7 +19,7 @@
 	display: flex; 
 	align-items: center;
 	justify-content: space-between;
-	position: fixed;
+	/*position: fixed;*/
 	z-index: 25;
 }
 
@@ -364,6 +364,61 @@ div a:hover {
 div a:active {
 	color: #fff;
 }
+
+/*HTML CONTACTO Y SU FORMULARIO*/
+.contenedor-formulario {
+	display: flex;
+	flex-direction: row;
+	column-gap: 5%;
+}
+
+.pregunta-formulario {
+	background-color: #545FF5;
+	max-width: 40%;
+}
+
+h2 {
+	font-family: 'Bricolage Grotesque', sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	color: #F5ECE3;
+	padding: 50px 20px 50px 60px;
+	max-width: 60%;
+}
+
+.zona-formulario {
+	background-color: #F5ECE3;
+	padding: 50px 20px 50px 0px;
+}
+
+.subtitulo-form {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #000000; 
+	max-width: 100%;
+}
+
+.column-izq-form {
+	display: flex;
+	flex-direction: column;
+}
+/*colum dercha*/
+
+input {
+	/*width: 100%;
+	padding: 10px;
+	font-family: 'Barlow', sans-serif; 
+	font-size: 32px;
+	font-weight: 400;
+	line-height: normal;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 5px;
+	background-color: #CFCFCF;
+}*/
+
+
 
 /* FOOTER: COPYRIGHT Y DIRECCIÓN */
 .copyright {
