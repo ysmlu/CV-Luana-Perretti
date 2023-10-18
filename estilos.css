@@ -169,11 +169,10 @@ main {
 }
 
 .lineas-position-sobremi {
-	
 	position: absolute;
 	z-index: 1;
-	
-
+	left: -50px;
+	top: 1200px; /*creo que está mal ubicar la ilustración con left y top*/
 }
 
 .caja-izq-sobremi {
@@ -240,6 +239,8 @@ ul li {
 	padding: 20px 0px 20px 0px;
 	display: flex;
 	justify-content: center;
+	position:relative;
+	z-index: 10; /*quise hacer que el título de proyectos destacados esté por encima usando position relative y z-index, ¿está bien?*/
 }
 
 .contenedorproyectos {
