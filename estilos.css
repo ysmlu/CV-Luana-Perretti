@@ -386,6 +386,15 @@ h2 {
 	max-width: 60%;
 }
 
+.h3-formulario {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	color: #545ff5;
+	display: flex;
+	justify-content: flex-start;
+}
+
 .zona-formulario {
 	background-color: #F5ECE3;
 	padding: 50px
