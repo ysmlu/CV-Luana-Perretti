@@ -261,7 +261,7 @@ h5 {
 	max-width: 60%;
 }
 
-h4 {
+.titulos-violeta {
 	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
 	font-weight: 700;
@@ -377,12 +377,12 @@ div a:active {
 	max-width: 40%;
 }
 
-h2 {
+.titulo-form {
 	font-family: 'Bricolage Grotesque', sans-serif;
-	font-size: 50px;
+	font-size: 70px;
 	font-weight: 700;
 	color: #F5ECE3;
-	padding: 50px 20px 50px 60px;
+	padding: 80px 20px 50px 80px;
 	max-width: 60%;
 }
 
@@ -406,6 +406,7 @@ h2 {
 	font-weight: 400;
 	color: #000000; 
 	max-width: 100%;
+	margin-bottom: 35px;
 }
 
 form {
@@ -462,6 +463,11 @@ input {
 	background-color: #F5ECE3;
 }
 
+.boton-enviar{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: -20px; /*¿Se puede agregar -px?*/
+}
 .submit {
 	font-family: 'Oswald', sans-serif; 
 	font-size: 20px;
@@ -473,7 +479,7 @@ input {
 	justify-content: center;
 	cursor: pointer;
 	border: none;
-	max-width: 25%
+	max-width: 20%
 }
 
 .submit:hover {
@@ -496,3 +502,4 @@ p {
 	font-weight: 300;
 	color: #FFFFFF;
 }
+
