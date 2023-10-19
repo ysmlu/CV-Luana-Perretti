@@ -18,8 +18,8 @@
 	display: flex; 
 	align-items: center;
 	justify-content: space-between;
-	position: fixed;
-	z-index: 25;
+	/*position: fixed;*/
+	z-index: 50;
 }
 
 .ysmlu{
@@ -378,7 +378,7 @@ div a:active {
 }
 .boton-formulario {
 	font-family:'Oswald', sans-serif;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 700;
 	line-height: normal;
 	background-color: #5151FC;
@@ -545,7 +545,7 @@ textarea {
 }
 .submit {
 	font-family: 'Oswald', sans-serif; 
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 400;
 	line-height: normal;
 	color: #F5ECE3;
