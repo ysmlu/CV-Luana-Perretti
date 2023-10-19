@@ -120,7 +120,7 @@ h1 {
 }
 
 /*ANIMACIÓN - PRESENTACIÓN*/ /*agregué esta animación que encontré y me pareció interesante, todavía me faltan aplicar propiedades al ancho de la página para que no se mueva de lugar*/
-.rotate-animation {
+.rotate-animation-uno {
 	animation: rotate-animation 25s infinite linear;
 }
 
@@ -150,7 +150,7 @@ h1 {
 	}
 }
 
-.rotate-animation {
+.rotate-animation-uno {
 	animation: rotate-animation 15s infinite linear
 }
 
@@ -366,6 +366,49 @@ div a:active {
 }
 
 /*HTML CONTACTO Y SU FORMULARIO*/
+
+.lineas-position-contacto {
+	position: absolute;
+	left: -30px;
+	top: 70px;
+	z-index: 3;
+}
+
+.rotate-animation-dos {
+	animation: rotate-animation 25s infinite linear;
+}
+
+.top80px {
+	top: 80px;
+}
+
+.left70px {
+	left: 70px;
+}
+
+.position-absolute {
+	position: absolute!important;
+}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg)
+	}
+
+	50% {
+		transform: rotate(180deg)
+	}
+
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+.rotate-animation-dos {
+	animation: rotate-animation 35s infinite linear
+}
+
+
 .contenedor-formulario {
 	display: flex;
 	flex-direction: row;
@@ -373,16 +416,17 @@ div a:active {
 }
 
 .pregunta-formulario {
-	background-color: #545FF5;
 	max-width: 40%;
+	z-index: 10;
 }
 
 .titulo-form {
 	font-family: 'Bricolage Grotesque', sans-serif;
 	font-size: 70px;
 	font-weight: 700;
-	color: #F5ECE3;
-	padding: 80px 20px 50px 80px;
+	color: #545FF5;
+	padding: 100px 20px 50px 100px;
+	margin-right: 20px;
 	max-width: 60%;
 }
 
@@ -397,7 +441,8 @@ div a:active {
 
 .zona-formulario {
 	background-color: #F5ECE3;
-	padding: 50px
+	padding: 50px;
+	z-index: 30;
 }
 
 .subtitulo-form {
