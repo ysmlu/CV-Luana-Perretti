@@ -365,6 +365,36 @@ div a:active {
 	color: #fff;
 }
 
+.contenedor-boton-form{
+	margin-top: 35px;
+}
+
+.p-boton-form{
+	font-family:'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: normal;
+	color: #FFFFFF;
+}
+.boton-formulario {
+	font-family:'Oswald', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: normal;
+	background-color: #5151FC;
+	color: #FFFFFF;
+	padding: 10px 25px;
+	border-radius: 15px;
+	cursor: pointer;
+	margin-top: 30px;
+	border: none;
+	box-shadow: 0 2px 5px #1B2368, 0 0px 2px #1B2368;
+}
+
+.boton-formulario:hover {
+	background-color: #00D3AA;
+}
+
 /*HTML CONTACTO Y SU FORMULARIO*/
 
 .lineas-position-contacto {
@@ -441,7 +471,7 @@ div a:active {
 
 .zona-formulario {
 	background-color: #F5ECE3;
-	padding: 50px;
+	padding: 25px 50px 50px 50px;
 	z-index: 30;
 }
 
