@@ -448,15 +448,17 @@ input {
 .mensaje-form{
 	display: flex;
 	flex-direction: column;
+	margin-right: -20px; /*¿Se puede agregar -px?*/
 }
 #mensaje{
-	padding: 10px 0px 50px 3px;
+	padding: 10px 0px 50px 10px;
 	margin: 5px 0px 20px 0px;
 	border: none;
 	font-family: 'Open Sans', sans-serif; 
 	font-size: 14px;
 	font-weight: 400;
 	line-height: normal;
+	color: #808080;
 	background-color: #F5ECE3;
 }
 
