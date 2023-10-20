@@ -61,10 +61,9 @@
 #backgroundmujer {
 	background-image: url("img/portadamujer.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
 	background-position: center;
 	/*width: 100%;
-	height: 100%;*/
+	height: 40%;*/
 } /*PARA AIMÉ: no estoy entendiendo como hacer para que la imagen ocupe correctamente todo el ancho y alto, si le agrego background-image es como que se me duplica la imagen y no sé como resolverlo, abajo estuve probando sólo con la imagen pero al aplicar width/height la tipografía veo todo super chico en cuanto a tamaños tipográficos
 Otro problema que me pasa es que el mismo <div> me genera un pequeño borde transparente abajo y no se como eliminarlo.*/
 
@@ -78,20 +77,24 @@ Otro problema que me pasa es que el mismo <div> me genera un pequeño borde tran
 /* PRESENTACIÓN */
 .presentacion {
 	background-color: #050505;
-	padding: 20px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center; /*todos estos atributos no se porqué no se están aplicando, quiero centrar la imagen y los textos de la zona de presentación como me dijeron pero no me estaría dejando, intenté agregar otro <div> o cambiando el html pero tampoco pude*/
+	padding: 25px;
+ /*todos estos atributos no se porqué no se están aplicando, quiero centrar la imagen y los textos de la zona de presentación como me dijeron pero no me estaría dejando, intenté agregar otro <div> o cambiando el html pero tampoco pude*/
 }
 
+.contenedor-presentacion {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	column-gap: 50px;
+}
 
 .columna-izq-presentacion {
-	padding: 50px;
+	padding: 50px 0px 50px 0px;
 }
 
 .columna-der-presentacion {
 	padding: 35px 10px 10px 20px;
+	max-width: 40%;
 }
 
 .luana {
@@ -115,7 +118,7 @@ h1 {
 	font-weight: 300;
 	color: #FFFFFF;
 	padding-top: 20px;
-	max-width: 65%;
+
 }
 
 /*ANIMACIÓN - PRESENTACIÓN*/ /*agregué esta animación que encontré y me pareció interesante, todavía me faltan aplicar propiedades al ancho de la página para que no se mueva de lugar*/
