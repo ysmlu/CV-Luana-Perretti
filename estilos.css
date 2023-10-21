@@ -59,19 +59,17 @@
 
 /* PORTADA MUJER */
 #backgroundmujer {
-	background-image: url("img/portadamujer.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-	/*width: 100%;
-	height: 40%;*/
-} /*PARA AIMÉ: no estoy entendiendo como hacer para que la imagen ocupe correctamente todo el ancho y alto, si le agrego background-image es como que se me duplica la imagen y no sé como resolverlo, abajo estuve probando sólo con la imagen pero al aplicar width/height la tipografía veo todo super chico en cuanto a tamaños tipográficos
+	background-size: 100%;
+	height: 440px;
+} /*CONSULTA: no estoy entendiendo como hacer para que la imagen ocupe correctamente todo el ancho y alto, si le agrego background-image es como que se me duplica la imagen y no sé como resolverlo, abajo estuve probando sólo con la imagen pero al aplicar width/height la tipografía veo todo super chico en cuanto a tamaños tipográficos
 Otro problema que me pasa es que el mismo <div> me genera un pequeño borde transparente abajo y no se como eliminarlo.*/
 
 /*.img_mujer_ilustraciones {
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
+	
 }*/
 
 /* PRESENTACIÓN */
@@ -110,6 +108,7 @@ h1 {
 	font-weight: 700;
 	color: #545ff5;
 	max-width: 50%;
+	z-index: 45; /*apliqué un z-index acá para que la estrella en animación no se superponga al estar más chica la pantalla pero no supe dónde agregar el z-index en la animación*/
 }
 
 .subtitulo {
@@ -190,6 +189,7 @@ main {
 .caja-der-sobremi {
 	display: flex;
 	flex-direction: column;
+	z-index: 6;
 }
 
 .h2sobremi {
@@ -253,6 +253,7 @@ ul li {
 	flex-direction: row;
 	padding: 80px 70px 0px 70px;
 	justify-content: center;
+	max-width: 100%; /*Está bien que aplique max-width a los contenedores?*/
 }
 
 
