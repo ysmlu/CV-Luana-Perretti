@@ -258,7 +258,8 @@ ul li {
 
 .div-proyectos {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap; /*cómo hago para controlar que el wrap queden las columnas iguales en la parte de abajo, porque las imágenes no están perfectamente centradas*/
+	/*column-gap: 20px; pendiente de colocar cuando corrija el problema del centrado*/
 }
 
 h5 {
