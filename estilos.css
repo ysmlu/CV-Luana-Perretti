@@ -249,17 +249,18 @@ ul li {
 }
 
 .contenedorproyectos {
+	max-width: 100%; /*¿Está bien que aplique max-width a los contenedores?*/
+	padding: 80px 0px 0px 70px;
 	display: flex;
 	flex-direction: row;
-	padding: 80px 0px 0px 70px;
 	justify-content: center;
-	max-width: 100%; /*¿Está bien que aplique max-width a los contenedores?*/
-}
-
-.div-proyectos {
-	display: flex;
 	flex-wrap: wrap; /*cómo hago para controlar que el wrap queden las columnas iguales en la parte de abajo, porque las imágenes no están perfectamente centradas*/
 	/*column-gap: 20px; pendiente de colocar cuando corrija el problema del centrado*/
+}
+
+img {
+	display: flex;
+	justify-content: center;
 }
 
 h5 {
