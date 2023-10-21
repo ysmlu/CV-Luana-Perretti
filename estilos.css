@@ -258,10 +258,6 @@ ul li {
 	/*column-gap: 20px; pendiente de colocar cuando corrija el problema del centrado*/
 }
 
-img {
-	display: flex;
-	justify-content: center;
-}
 
 h5 {
 	font-family: 'Bricolage Grotesque', sans-serif;
@@ -452,7 +448,7 @@ div a:active {
 .contenedor-formulario {
 	display: flex;
 	flex-direction: row;
-	column-gap: 5%;
+	column-gap: 60px;;
 }
 
 .pregunta-formulario {
@@ -491,24 +487,26 @@ div a:active {
 	font-weight: 400;
 	color: #000000; 
 	max-width: 100%;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 }
 
 form {
 	display: flex;
 	flex-direction: column;
 	background-color: #545FF5;
-	padding: 50px 70px 30px 50px;
-	max-width: 80%;
+	padding: 50px 60px 30px 60px;
+	box-sizing: border-box;
+	width: 100%;
 }
 .items-formulario{
 	display: flex;
 	flex-direction: row;
-	column-gap: 10%;
-	
+	column-gap: 50px;
 }
 
 .columna-izq-form, .columna-der-form {
+	display: flex;
+	flex-direction: column;
 	
 }
 
@@ -520,7 +518,6 @@ label {
 	color: #F5ECE3;
 }
 input {
-	width: 100%;
 	padding: 10px;
 	font-family: 'Open Sans', sans-serif; 
 	font-size: 15px;
@@ -534,8 +531,8 @@ input {
 .mensaje-form{
 	display: flex;
 	flex-direction: column;
-	margin-right: -20px; /*¿Se puede agregar -px?*/
 }
+
 textarea {
 	padding: 10px 0px 50px 10px;
 	margin: 5px 0px 20px 0px;
@@ -551,11 +548,11 @@ textarea {
 .boton-enviar{
 	display: flex;
 	justify-content: flex-end;
-	margin-right: -20px; /*¿Se puede agregar -px?*/
 }
+
 .submit {
 	font-family: 'Oswald', sans-serif; 
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: 400;
 	line-height: normal;
 	color: #F5ECE3;
@@ -564,7 +561,7 @@ textarea {
 	justify-content: center;
 	cursor: pointer;
 	border: none;
-	max-width: 20%
+	padding: 5px 25px 6px 25px;
 }
 
 .submit:hover {
