@@ -10,6 +10,19 @@
 	padding:0px;
 }
 
+/* CURSOR */
+.cursor-personalizado {
+	position: fixed;
+	display: none;
+	z-index: 250;
+	width: 45px;
+	height: 45px;
+	background-image: url("img/estrella-cursor1-18.svg");
+	background-size: cover;
+	cursor: none;
+	pointer-events: none; 
+}
+
 /* BOTONERA */
 .nav-botonera {
 	width: 100%;
@@ -807,10 +820,3 @@ figure dd+dt+dd {
 
 
 
-
-
-.custom-cursor {
-    position: fixed;
-    pointer-events: none;
-	display:contents;
-  }

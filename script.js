@@ -1,14 +1,21 @@
 // JavaScript Document
 
-const cursor = document.querySelector(".custom-cursor"); /*No entiendo porque el cursor no funciona, probé un montón de formas*/
-			cursor.style.width = "30px";
-			cursor.style.height = "30px";
-			cursor.style.backgroundImage = "url('img/estrella.puntero-17.svg')";
+/* CURSOR */ /*El svg con el cursor a veces anda y a veces no*/
+document.addEventListener("DOMContentLoaded", function () {
+	const customCursor = document.querySelector(".cursor-personalizado");
 
-			const x = document.querySelector("body").clientX;
-			const y = document.querySelector("body").clientY;
+	document.addEventListener("mousemove", (e) => {
+		const x = e.clientX;
+		const y = e.clientY;
 
-			cursor.style.left = x + 10;
-			cursor.style.top = y + 10;
+		customCursor.style.left = (x + 30) + "px";
+		customCursor.style.top = (y + 15) + "px";
+	});
+	document.addEventListener("mouseenter", () => {
+		customCursor.style.display = "block";
+	});
 
-			document.body.appendChild(cursor);
+	document.addEventListener("mouseleave", () => {
+		customCursor.style.display = "none";
+	});
+});
