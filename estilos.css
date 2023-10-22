@@ -804,3 +804,13 @@ figure dt {
 figure dd+dt+dd {
 	margin-left: .375rem;
 }*/
+
+
+
+
+
+.custom-cursor {
+    position: fixed;
+    pointer-events: none;
+	display:contents;
+  }
