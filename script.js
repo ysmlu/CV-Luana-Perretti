@@ -19,3 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		customCursor.style.display = "none";
 	});
 });
+
+
+
+
+
+
