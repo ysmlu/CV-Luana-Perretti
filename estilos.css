@@ -608,6 +608,11 @@ p {
 
 /*GALERÍA DE IMÁGENES*/ /*Deshabilité por el momento la galería ya que recién estuve solamente armando las etiquetas, me falta mucho por modificar, algunas líneas me tiran error*/
 
+.nav-botonera-galeria {
+	background-color: #f5ece3;
+	padding: 10px 0px 0px 20px;
+}
+
 .contenedor-galeria {
 	display: flex;
 	flex-direction: column;
@@ -622,7 +627,7 @@ p {
 	font-weight: 400;
 	color: #000000;
 	margin-top: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 	max-width: 50%;
 }
 
@@ -634,9 +639,9 @@ p {
 	background-color: #5151FC;
 	color: #FFFFFF;
 	padding: 10px 25px;
-	border-radius: 15px;
+	border-radius: 11px;
 	cursor: pointer;
-	margin-top: 20px;
+	margin-bottom: 50px;
 	border: none;
 	box-shadow: 0 2px 5px #1B2368, 0 0px 2px #1B2368;
 }
@@ -658,17 +663,19 @@ p {
 
 ol[aria-label=Photographs] {
     margin: .375rem;
-    padding: 0;
     list-style: none;
     display: grid;
+	justify-content: center;
     grid-template-columns: auto auto auto;
-    grid-gap: .375rem
+    grid-gap: .600rem;
+	padding: 20px 0px 60px 0px;
+	
 }
 
 ol[aria-label=Photographs] img {
     display: block;
     max-width: 100%;
-    width: 15rem;
+    width: 20rem;
     height: auto;
     contain: layout
 }
@@ -679,7 +686,7 @@ figure img {
     /*max-height: 74vh;*/
     margin-right: auto;
     margin-left: auto;
-	margin: 30px 0px 30px 0px;
+	margin-bottom: 30px;
 }
 
 
