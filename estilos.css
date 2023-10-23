@@ -177,7 +177,7 @@ main {
 	/*background-color: #f5ece3;*/
 	display: flex;
 	flex-direction: row;
-	column-gap: 10%; /* para mi: pasar a px */
+	column-gap: 8%; 
 	padding: 50px 50px 70px 50px;
 	justify-content: center; 
 }
