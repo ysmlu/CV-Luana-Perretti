@@ -626,7 +626,7 @@ p {
 	color: #000000;
 	margin-top: 5px;
 	margin-bottom: 25px;
-	max-width: 50%;
+	max-width: 60%;
 }
 
 .boton-galeria {
@@ -669,9 +669,9 @@ ol[aria-label=Photographs] {
 ol[aria-label=Photographs] img {
 	display: block;
 	max-width: 100%;
-	width: 20rem;
+	width: 22rem;
 	height: auto;
-	contain: layout
+	contain: layout;
 }
 
 figure img {
