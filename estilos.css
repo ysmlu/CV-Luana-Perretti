@@ -210,7 +210,19 @@ main {
 	color: #545ff5;
 	padding-bottom: 10px;
 	max-width: 50%;
+	position: relative;
+      left: -100%;
+      animation: slideInFromLeft 1.5s ease-in forwards;
 }
+
+@keyframes slideInFromLeft {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 0;
+      }
+    }
 
 .parrafo {
 	font-size: 15px;
@@ -257,6 +269,8 @@ ul li {
 	justify-content: center;
 	position:relative;
 	z-index: 10; 
+	left: -100%;
+	animation: slideInFromLeft 2.5s ease-in forwards;
 }
 
 .contenedorproyectos {
@@ -411,6 +425,7 @@ div a:active {
 .boton-formulario:hover {
 	background-color: #00D3AA;
 }
+
 
 /*HTML CONTACTO Y SU FORMULARIO*/
 

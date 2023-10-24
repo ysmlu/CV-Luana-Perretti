@@ -1,6 +1,6 @@
 // JavaScript Document
 
-/* CURSOR */ /*El svg con el cursor a veces anda y a veces no*/
+/* CURSOR */ 
 document.addEventListener("DOMContentLoaded", function () {
 	const customCursor = document.querySelector(".cursor-personalizado");
 
@@ -23,19 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-const titulo = document.querySelector(".h2sobremi");
-
-// Desplaza el título desde la izquierda a la pantalla
-titulo.style.left = "-100%";
-
-// Realiza la transición en 2 segundos
-titulo.style.transition = "left 2s";
-
-// Oculta el título al principio
-titulo.style.display = "none";
-
-// Muestra el título después de 2 segundos
-setTimeout(() => {
-  titulo.style.display = "block";
-}, 2000);
+/*ANIMACIÓN  SLIDE - TÍTULO SOBRE MÍ*/
+document.addEventListener("DOMContentLoaded", function() {
+		const h2Element = document.querySelector(".h2sobremi");
+		h2Element.style.left = "-100%";
+		h2Element.classList.add("animated");
+	});
