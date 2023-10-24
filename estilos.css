@@ -614,11 +614,6 @@ p {
 
 
 
-
-
-
-
-
 /*GALERÍA DE IMÁGENES*/ /*No funcionan las animaciones de la galería pero no encontré el porque*/
 
 .nav-botonera-galeria {
@@ -642,19 +637,8 @@ p {
 	margin-top: 5px;
 	margin-bottom: 25px;
 	max-width: 60%;
-	position: relative;
-      bottom: -100%;
-      animation: slideInFromBottom 6s ease-in forwards;
+	
 }
-
-@keyframes slideInFromBottom {
-      0% {
-        bottom: -100%;
-      }
-      100% {
-        bottom: 0;
-      }
-    }
 
 .boton-galeria {
 	font-family:'Oswald', sans-serif;
@@ -796,3 +780,56 @@ figcaption div {
 		transform: translateY(2.5rem)
 		}
 }
+
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1080px) {
+	/*INDEX*/
+	.contenedor-presentacion {
+		flex-direction: column;	
+	}
+	
+	.columna-izq-presentacion {
+		padding: 20px 0px 20px 0px;
+		display: flex;
+		align-content: flex-start;
+	}
+	
+	.columna-der-presentacion {
+		max-width: 70%;
+	}
+	h1, .luana {
+		max-width: 100%;
+		font-size: 80px;
+	}
+	
+	.subtitulo {
+		font-size: 35px;
+	}
+	
+	.bottom125px {
+		bottom: 1050px;
+	}
+	
+	.contenedores-sobremi {
+		flex-direction: column;
+		
+	}
+	
+	.h2sobremi, .titulosnaranja {
+		max-width: 100%;
+	}
+	
+	.h2sobremi {
+		font-size: 60px;
+		
+	}
+	
+}
+	
+	
+	
+	
+	
+	

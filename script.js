@@ -31,8 +31,3 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 
 
-document.addEventListener("DOMContentLoaded", function() {
-      const pElement = document.querySelector(".epigrafe-galeria");
-      pElement.style.bottom = "-100%";
-      pElement.classList.add("animated");
-    });
