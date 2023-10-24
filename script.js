@@ -23,9 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-/*ANIMACIÓN  SLIDE - TÍTULO SOBRE MÍ*/
+/*ANIMACIÓN SLIDE IZQ - TÍTULO SOBRE MÍ*/
 document.addEventListener("DOMContentLoaded", function() {
 		const h2Element = document.querySelector(".h2sobremi");
 		h2Element.style.left = "-100%";
 		h2Element.classList.add("animated");
 	});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+      const pElement = document.querySelector(".epigrafe-galeria");
+      pElement.style.bottom = "-100%";
+      pElement.classList.add("animated");
+    });

@@ -642,7 +642,19 @@ p {
 	margin-top: 5px;
 	margin-bottom: 25px;
 	max-width: 60%;
+	position: relative;
+      bottom: -100%;
+      animation: slideInFromBottom 6s ease-in forwards;
 }
+
+@keyframes slideInFromBottom {
+      0% {
+        bottom: -100%;
+      }
+      100% {
+        bottom: 0;
+      }
+    }
 
 .boton-galeria {
 	font-family:'Oswald', sans-serif;
