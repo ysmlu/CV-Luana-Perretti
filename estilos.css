@@ -312,7 +312,7 @@ h5 {
 	max-width: 60%;
 }
 
-img:hover { 
+.contenedorproyectos img:hover { 
 	transform: scale(1.1);
 	transition: transform 0.3s ease;
 }
@@ -332,6 +332,11 @@ img:hover {
 	align-content: center;
 	align-items: center;
 	
+}
+
+#galeria img:hover { 
+	transform: scale(1.1);
+	transition: transform 0.3s ease;
 }
 
 .epigrafe-galeria {
