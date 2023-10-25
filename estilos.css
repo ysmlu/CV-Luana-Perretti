@@ -799,7 +799,8 @@ p {
 	/*BOTONERA*/
 	.nav-botonera {
 		flex-direction: column;
-		height: 300px
+		height: 260px;
+		justify-content:flex-start;
 
 	}
 	
@@ -809,10 +810,12 @@ p {
 	}
 	
 	.botonera {
-		flex-direction: column;
+		flex-direction: row;
 		align-content: center;
 		align-items: center;
 		margin-right: 0px;
+		width: 100%;
+
 	}
 	
 	.botonera li {
@@ -840,24 +843,29 @@ p {
 	}
 	
 	.columna-izq-presentacion {
-		padding: 20px 0px 20px 0px;
+		padding: 10px 0px 10px 0px;
 		align-content: flex-start;
+	}
+	
+	.columna-izq-presentacion img{
+		width: 85%;
+		height: 85%;
 	}
 	
 	.columna-der-presentacion {
 		max-width: 70%;
-		padding-bottom: 25px;
+		padding-top: 15px;
 	}
 	h1, .luana {
-		font-size: 60px;
+		font-size: 50px;
 	}
 	
 	.subtitulo {
-		font-size: 30px;
+		font-size: 20px;
 	}
 	
 	.bottom125px {
-		bottom: 10px;
+		bottom: -150px;
 	}
 	
 	.right130px {
@@ -871,41 +879,45 @@ p {
 		align-items: center;
 	}
 	
-	.h2sobremi {
-		font-size: 40px;
+	.h2sobremi, h3 {
+		font-size: 30px;
 		
 	}
 	
 	.caja-izq-sobremi {
-		max-width: 80%;
+		max-width: 90%;
 	}
 	
 	.parrafo, li, ul li {
-		font-size: 20px;
+		font-size: 16px;
 	}
 	
 	.titulosnaranja {
-		font-size: 22px;
+		font-size: 20px;
 	}
 	
 	
 	/*PROYECTOS DESTACADOS*/
 	.tituloproyecto {
-		font-size: 34px;
+		font-size: 30px;
 	}
 	
 	.lineas-position-sobremi {
-		top: 1460px;
+		display: none;
+
 	}
 	
 	.contenedorproyectos {
 		flex-direction: column;
 		align-content: center;
+		align-items: center;
+		padding-top: 40px;
 	}
 	
+	
 	.img-proyectos {
-		max-width: 430px;
-		max-height: 280px;
+		width: 85%;
+		height: 85%;
 	}
 
 	
