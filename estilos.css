@@ -789,11 +789,45 @@ p {
 
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width : 600px ){
 	/*INDEX*/
+	/*GENERAL*/
 	.h2sobremi, .titulosnaranja, h1, .luana, .caja-der-sobremi { /* decidí poner todo loque necesitaba max-width:100% juntos, se puede?*/
 		max-width: 100%;
 	}
+	
+	/*BOTONERA*/
+	.nav-botonera {
+		flex-direction: column;
+		height: 300px
+
+	}
+	
+	.ysmlu img{
+		align-items: center;
+		margin: 20px 80px 10px 0px;
+	}
+	
+	.botonera {
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		margin-right: 0px;
+	}
+	
+	.botonera li {
+		margin-top: 13px;
+	}
+	
+	.botonera a {
+		padding: 5px 10px 5px 10px;
+	}
+	/* BANNER ILUSTRACIÓN MUJER*/
+	
+	
+	
+	
+	
 	
 	/*PRESENTACIÓN*/
 	.img_mujer_ilustraciones {
@@ -823,8 +857,12 @@ p {
 	}
 	
 	.bottom125px {
-		bottom: 1050px;
+		bottom: 10px;
 	}
+	
+	.right130px {
+		right: 40px;
+}
 	
 	
 	/*SOBRE MÍ*/
