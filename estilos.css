@@ -71,11 +71,11 @@
 }
 
 /* PORTADA MUJER */
-#backgroundmujer {
+#backgroundmujer img {
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100%;
-	height: 440px;
+	height: 100%;
+	width: 100%;
 } 
 
 /*.img_mujer_ilustraciones {
@@ -136,8 +136,8 @@ h1 {
 	animation: rotate-animation 25s infinite linear;
 }
 
-.bottom125px {
-	bottom: 125px;
+.bottom110px {
+	bottom: 110px;
 }
 
 .right130px {
@@ -186,7 +186,7 @@ main {
 	position: absolute;
 	z-index: 1;
 	left: -50px;
-	top: 1160px; /*creo que está mal ubicar la ilustración con left y top, en caso de que si. Se podría llegar a usar en porcentajes?*/
+	top: 1173px; /*creo que está mal ubicar la ilustración con left y top, en caso de que si. Se podría llegar a usar en porcentajes?*/
 }
 
 .caja-izq-sobremi {
@@ -792,7 +792,7 @@ p {
 @media screen and (max-width : 600px ){
 	/*INDEX*/
 	/*GENERAL*/
-	.h2sobremi, .titulosnaranja, h1, .luana, .caja-der-sobremi { /* decidí poner todo loque necesitaba max-width:100% juntos, se puede?*/
+	.h2sobremi, .titulosnaranja, h1, .luana, .caja-der-sobremi, h3 { /* decidí poner todo loque necesitaba max-width:100% juntos, se puede?*/
 		max-width: 100%;
 	}
 	
@@ -837,7 +837,9 @@ p {
 		/*max-width: 50%;
 		max-height: 50%; No se como hacer para que la imagen ocupe menos espacio y no se rompa o deforme*/
 	}
-	
+	/*#backgroundmujer img {
+		
+	}*/
 	.contenedor-presentacion {
 		flex-direction: column;	
 	}
@@ -920,7 +922,16 @@ p {
 		height: 85%;
 	}
 
+	/*GRACIAS POR VER*/
+	h3, .interes {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	
+	.interes {
+		max-width: 85%;
+	}
 		
 }
 	
