@@ -860,7 +860,7 @@ p {
 		align-content: center;
 	}
 	
-	img {
+	.img-proyectos {
 		max-width: 430px;
 		max-height: 280px;
 
