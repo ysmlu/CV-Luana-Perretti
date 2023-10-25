@@ -801,14 +801,14 @@ p {
 	/*BOTONERA*/
 	.nav-botonera {
 		flex-direction: column;
-		height: 240px;
+		height: 230px;
 		justify-content:flex-start;
 
 	}
 	
 	.ysmlu img{
 		align-items: center;
-		margin: 20px 80px 10px 0px;
+		margin: 20px 80px 0px 0px;
 		z-index: 40;
 	}
 	
@@ -830,6 +830,10 @@ p {
 		font-size:16px;
 	}
 	/* BANNER ILUSTRACIÓN MUJER*/
+	#backgroundmujer img {
+		background-size: 200% auto;
+	}
+	
 	
 	
 	
@@ -837,13 +841,6 @@ p {
 	
 	
 	/*PRESENTACIÓN*/
-	.img_mujer_ilustraciones {
-		/*max-width: 50%;
-		max-height: 50%; No se como hacer para que la imagen ocupe menos espacio y no se rompa o deforme*/
-	}
-	/*#backgroundmujer img {
-		
-	}*/
 	.contenedor-presentacion {
 		flex-direction: column;	
 	}
@@ -899,7 +896,7 @@ p {
 	}
 	
 	.parrafo, li, ul li {
-		font-size: 16px;
+		font-size: 15px;
 	}
 	
 	.titulosnaranja {
@@ -955,7 +952,7 @@ p {
 	}
 	
 	.interes {
-		text-align: left;
+		text-align: center;
 		width: 70%;
 		font-size: 18px;
 	}
@@ -982,7 +979,7 @@ p {
 	}
 	
 	.p-boton-form {
-		max-width: 80%;
+		max-width: 60%;
 		font-size: 15px;
 	}
 	
@@ -993,7 +990,8 @@ p {
 	
 	/*FOOTER*/
 	.copyright div p {
-		font-size: 9px;
+		font-size: 10px;
+		width: 100%;
 	}
 }
 	
