@@ -810,7 +810,7 @@ p {
 	}
 	
 	.botonera {
-		flex-direction: row;
+		flex-direction: column;
 		align-content: center;
 		align-items: center;
 		margin-right: 0px;
@@ -861,7 +861,7 @@ p {
 	}
 	
 	.subtitulo {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	
 	.bottom125px {
