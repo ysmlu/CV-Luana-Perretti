@@ -764,6 +764,7 @@ textarea {
 	cursor: pointer;
 	border: none;
 	padding: 5px 25px 6px 25px;
+	width: 100%;
 }
 
 .submit:hover {
@@ -800,7 +801,7 @@ p {
 	/*BOTONERA*/
 	.nav-botonera {
 		flex-direction: column;
-		height: 260px;
+		height: 240px;
 		justify-content:flex-start;
 
 	}
@@ -808,6 +809,7 @@ p {
 	.ysmlu img{
 		align-items: center;
 		margin: 20px 80px 10px 0px;
+		z-index: 40;
 	}
 	
 	.botonera {
@@ -825,6 +827,7 @@ p {
 	
 	.botonera a {
 		padding: 5px 10px 5px 10px;
+		font-size:16px;
 	}
 	/* BANNER ILUSTRACIÓN MUJER*/
 	
@@ -860,7 +863,7 @@ p {
 		padding-top: 15px;
 	}
 	h1, .luana {
-		font-size: 50px;
+		font-size: 48px;
 	}
 	
 	.subtitulo {
@@ -877,6 +880,10 @@ p {
 	
 	
 	/*SOBRE MÍ*/
+	.lineas-position-sobremi {
+		display: none;
+	}
+	
 	.contenedores-sobremi {
 		flex-direction: column;
 		align-items: center;
@@ -902,12 +909,12 @@ p {
 	
 	/*PROYECTOS DESTACADOS*/
 	.tituloproyecto {
-		font-size: 30px;
+		font-size: 28px;
 	}
 	
-	.lineas-position-sobremi {
-		display: none;
-
+	.epigrafe {
+		max-width: 80%;
+		font-size: 14px;
 	}
 	
 	.contenedorproyectos {
@@ -919,8 +926,8 @@ p {
 	
 	
 	.img-proyectos {
-		width: 85%;
-		height: 85%;
+		width: 90%;
+		height: 90%;
 	}
 
 	/*GALERÍA*/
@@ -948,8 +955,8 @@ p {
 	}
 	
 	.interes {
-		text-align: center;
-		width: 90%;
+		text-align: left;
+		width: 70%;
 		font-size: 18px;
 	}
 	
@@ -965,13 +972,28 @@ p {
 		padding-left: 0px;
 	}
 	
+	.contenedor-boton-form {
+		display: flex;
+		align-content: center;
+		flex-direction: column;
+		align-items: center;
+		
+		
+	}
+	
 	.p-boton-form {
 		max-width: 80%;
 		font-size: 15px;
 	}
 	
 	.boton-formulario {
-		
+		font-size: 17px;
+	}
+	
+	
+	/*FOOTER*/
+	.copyright div p {
+		font-size: 9px;
 	}
 }
 	
