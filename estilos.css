@@ -319,6 +319,175 @@ img:hover {
 /*Acá aplique una pequeña transición a las imágenes de mis proyectos destacados pero no se como hacer para que NO se aplique a tooodas las imágenes de mis html*/
 
 
+/*GALERÍA DE IMÁGENES*/ /*No funcionan las animaciones de la galería pero no encontré el porque*/
+
+.nav-botonera-galeria {
+	background-color: #f5ece3;
+	padding: 10px 0px 0px 20px;
+}
+
+.contenedor-galeria {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	
+}
+
+.epigrafe-galeria {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #000000;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	max-width: 60%;
+	
+}
+
+.boton-galeria {
+	font-family:'Oswald', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: normal;
+	background-color: #5151FC;
+	color: #FFFFFF;
+	padding: 10px 25px;
+	border-radius: 11px;
+	cursor: pointer;
+	margin-bottom: 50px;
+	border: none;
+	box-shadow: 0 2px 5px #1B2368, 0 0px 2px #1B2368;
+}
+
+.boton-galeria:hover {
+	background-color: #00D3AA;
+}
+
+@supports (-webkit-touch-callout: none) {
+	.galeria {
+		min-height: -webkit-fill-available;
+		min-height: 100vh;
+		}
+}
+
+
+ol[aria-label=Photographs] {
+	list-style: none;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: auto auto auto;
+	grid-gap: .600rem;
+	padding: 20px 0px 60px 0px;
+	
+}
+
+ol[aria-label=Photographs] img {
+	display: block;
+	max-width: 100%;
+	width: 22rem;
+	height: auto;
+	contain: layout;
+}
+
+figure img {
+	display: block;
+	max-width: 100%;
+	/*max-height: 74vh;*/
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
+	z-index: 300;
+}
+
+
+figcaption h2,figcaption div {
+	contain: layout
+}
+
+figcaption h2 {
+	view-transition-name: photo-heading
+}
+
+figcaption div {
+	view-transition-name: photo-location-time
+}
+
+/*estas transiciones no funcionan, no se porqué*/
+::view-transition-new(photo-heading):only-child,::view-transition-new(photo-location-time):only-child,::view-transition-new(photo-meta):only-child {
+	animation: .3s ease var(--animation-delay, 0s) both fade-in,.3s ease var(--animation-delay, 0s) both slide-up
+}
+
+::view-transition-new(photo-heading):only-child {
+	animation-delay: 50ms
+}
+
+::view-transition-new(photo-location-time):only-child {
+	animation-delay: .1s
+}
+
+::view-transition-new(photo-meta):only-child {
+	animation-delay: .15s
+}
+
+::view-transition-old(photo-heading):only-child,::view-transition-old(photo-location-time):only-child,::view-transition-old(photo-meta):only-child {
+	animation: .2s ease var(--animation-delay, 0s) both fade-out,.2s ease var(--animation-delay, 0s) both slide-down
+}
+
+::view-transition-old(photo-heading):only-child {
+	animation-delay: .15s
+}
+
+::view-transition-old(photo-location-time):only-child {
+	animation-delay: .1s
+}
+
+::view-transition-old(photo-meta):only-child {
+	animation-delay: 50ms
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 1
+	}
+
+	to {
+		opacity: 0
+	}
+}
+
+@keyframes slide-up {
+	0% {
+		transform: translateY(2.5rem)
+	}
+
+	to {
+		transform: translateY(0)
+	}
+}
+
+@keyframes slide-down {
+	0% {
+		transform: translateY(0)
+	}
+
+	to {
+		transform: translateY(2.5rem)
+		}
+}
+
+
+
 /* FOOTER: GRACIAS POR VER */
 .barra-color {
 	background-color: #545ff5;
@@ -614,218 +783,89 @@ p {
 
 
 
-/*GALERÍA DE IMÁGENES*/ /*No funcionan las animaciones de la galería pero no encontré el porque*/
-
-.nav-botonera-galeria {
-	background-color: #f5ece3;
-	padding: 10px 0px 0px 20px;
-}
-
-.contenedor-galeria {
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	align-items: center;
-	
-}
-
-.epigrafe-galeria {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-	font-weight: 400;
-	color: #000000;
-	margin-top: 5px;
-	margin-bottom: 25px;
-	max-width: 60%;
-	
-}
-
-.boton-galeria {
-	font-family:'Oswald', sans-serif;
-	font-size: 20px;
-	font-weight: 700;
-	line-height: normal;
-	background-color: #5151FC;
-	color: #FFFFFF;
-	padding: 10px 25px;
-	border-radius: 11px;
-	cursor: pointer;
-	margin-bottom: 50px;
-	border: none;
-	box-shadow: 0 2px 5px #1B2368, 0 0px 2px #1B2368;
-}
-
-.boton-galeria:hover {
-	background-color: #00D3AA;
-}
-
-@supports (-webkit-touch-callout: none) {
-	.galeria {
-		min-height: -webkit-fill-available;
-		min-height: 100vh;
-		}
-}
-
-
-ol[aria-label=Photographs] {
-	list-style: none;
-	display: grid;
-	justify-content: center;
-	grid-template-columns: auto auto auto;
-	grid-gap: .600rem;
-	padding: 20px 0px 60px 0px;
-	
-}
-
-ol[aria-label=Photographs] img {
-	display: block;
-	max-width: 100%;
-	width: 22rem;
-	height: auto;
-	contain: layout;
-}
-
-figure img {
-	display: block;
-	max-width: 100%;
-	/*max-height: 74vh;*/
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 30px;
-	z-index: 300;
-}
-
-
-figcaption h2,figcaption div {
-	contain: layout
-}
-
-figcaption h2 {
-	view-transition-name: photo-heading
-}
-
-figcaption div {
-	view-transition-name: photo-location-time
-}
-
-/*estas transiciones no funcionan, no se porqué*/
-::view-transition-new(photo-heading):only-child,::view-transition-new(photo-location-time):only-child,::view-transition-new(photo-meta):only-child {
-	animation: .3s ease var(--animation-delay, 0s) both fade-in,.3s ease var(--animation-delay, 0s) both slide-up
-}
-
-::view-transition-new(photo-heading):only-child {
-	animation-delay: 50ms
-}
-
-::view-transition-new(photo-location-time):only-child {
-	animation-delay: .1s
-}
-
-::view-transition-new(photo-meta):only-child {
-	animation-delay: .15s
-}
-
-::view-transition-old(photo-heading):only-child,::view-transition-old(photo-location-time):only-child,::view-transition-old(photo-meta):only-child {
-	animation: .2s ease var(--animation-delay, 0s) both fade-out,.2s ease var(--animation-delay, 0s) both slide-down
-}
-
-::view-transition-old(photo-heading):only-child {
-	animation-delay: .15s
-}
-
-::view-transition-old(photo-location-time):only-child {
-	animation-delay: .1s
-}
-
-::view-transition-old(photo-meta):only-child {
-	animation-delay: 50ms
-}
-
-@keyframes fade-in {
-	0% {
-		opacity: 0
-	}
-
-	to {
-		opacity: 1
-	}
-}
-
-@keyframes fade-out {
-	0% {
-		opacity: 1
-	}
-
-	to {
-		opacity: 0
-	}
-}
-
-@keyframes slide-up {
-	0% {
-		transform: translateY(2.5rem)
-	}
-
-	to {
-		transform: translateY(0)
-	}
-}
-
-@keyframes slide-down {
-	0% {
-		transform: translateY(0)
-	}
-
-	to {
-		transform: translateY(2.5rem)
-		}
-}
-
-
-
 /*MEDIA QUERIES*/
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 600px) {
 	/*INDEX*/
+	.h2sobremi, .titulosnaranja, h1, .luana, .caja-der-sobremi { /* decidí poner todo loque necesitaba max-width:100% juntos, se puede?*/
+		max-width: 100%;
+	}
+	
+	/*PRESENTACIÓN*/
+	.img_mujer_ilustraciones {
+		/*max-width: 50%;
+		max-height: 50%; No se como hacer para que la imagen ocupe menos espacio y no se rompa o deforme*/
+	}
+	
 	.contenedor-presentacion {
 		flex-direction: column;	
 	}
 	
 	.columna-izq-presentacion {
 		padding: 20px 0px 20px 0px;
-		display: flex;
 		align-content: flex-start;
 	}
 	
 	.columna-der-presentacion {
 		max-width: 70%;
+		padding-bottom: 25px;
 	}
 	h1, .luana {
-		max-width: 100%;
-		font-size: 80px;
+		font-size: 60px;
 	}
 	
 	.subtitulo {
-		font-size: 35px;
+		font-size: 30px;
 	}
 	
 	.bottom125px {
 		bottom: 1050px;
 	}
 	
+	
+	/*SOBRE MÍ*/
 	.contenedores-sobremi {
 		flex-direction: column;
-		
-	}
-	
-	.h2sobremi, .titulosnaranja {
-		max-width: 100%;
+		align-items: center;
 	}
 	
 	.h2sobremi {
-		font-size: 60px;
+		font-size: 40px;
 		
 	}
 	
+	.caja-izq-sobremi {
+		max-width: 80%;
+	}
+	
+	.parrafo, li, ul li {
+		font-size: 20px;
+	}
+	
+	.titulosnaranja {
+		font-size: 22px;
+	}
+	
+	
+	/*PROYECTOS DESTACADOS*/
+	.tituloproyecto {
+		font-size: 34px;
+	}
+	
+	.lineas-position-sobremi {
+		top: 1460px;
+	}
+	
+	.contenedorproyectos {
+		flex-direction: column;
+		align-content: center;
+	}
+	
+	img {
+		max-width: 430px;
+		max-height: 280px;
+
+	}
+
 }
 	
 	
