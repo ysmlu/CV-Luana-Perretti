@@ -730,6 +730,10 @@ p {
 		max-width: 100%;
 	}
 	
+	.position-absolute right130px bottom110px rotate-animation-uno {
+		display: none;
+	}
+	
 	/*BOTONERA*/
 	.nav-botonera {
 		flex-direction: column;
@@ -788,6 +792,10 @@ p {
 		padding-top: 15px;
 	}
 	
+	.columna-der-presentacion img {
+		display: none;
+	}
+	
 	h1, .luana {
 		font-size: 48px;
 		position: relative;
@@ -796,18 +804,6 @@ p {
 	
 	.subtitulo {
 		font-size: 18px;
-	}
-	
-	.bottom110px {
-		bottom: 190px;
-	}
-	
-	.right130px {
-		right: 40px;
-	}
-	
-	.position-absolute right130px bottom110px rotate-animation-uno {
-		z-index: 10;
 	}
 	
 	/*SOBRE MÍ*/
@@ -916,6 +912,10 @@ p {
 	
 	.boton-formulario {
 		font-size: 17px;
+	}
+	
+	.aside-redes {
+		display: none;
 	}
 	
 	/*FOOTER*/
