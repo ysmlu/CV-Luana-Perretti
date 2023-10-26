@@ -265,6 +265,7 @@ ul li {
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+	column-gap: 90px;
 }
 
 h5 {
@@ -287,12 +288,16 @@ h5 {
 
 .epigrafe {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-	font-weight: 400;
 	color: #000000;
 	margin-top: 5px;
 	margin-bottom: 80px;
-	max-width: 60%;
+	max-width: 55%;
+}
+
+.cont-proyecto-indiv {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .contenedorproyectos img:hover { 
@@ -753,10 +758,12 @@ p {
 		align-items: center;
 		margin-right: 0px;
 		width: 100%;
+		
 	}
 	
 	.botonera li {
 		margin-top: 13px;
+		
 	}
 	
 	.botonera a {
@@ -846,7 +853,7 @@ p {
 		flex-direction: column;
 		align-content: center;
 		align-items: center;
-		padding-top: 40px;
+		padding: 40px 0px 0px 57px;
 	}
 	
 	.img-proyectos {
@@ -855,6 +862,17 @@ p {
 	}
 	
 	/*GALERÍA*/
+	
+	#body-galeria {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+	
+	#footer-galeria {
+		margin-top: auto;
+	}
+	
 	ol[aria-label=Photographs] {
 		display: flex;
 		flex-direction: column;
@@ -890,8 +908,8 @@ p {
 	.titulocontacto {
 		padding-top: 20px;
 		padding-left: 0px;
-		width: 26%;
-		padding-right: 50px;
+		max-width: 100%;
+		padding-right: 80px;
 	}
 	
 	.redes{
@@ -912,6 +930,7 @@ p {
 	
 	.boton-formulario {
 		font-size: 17px;
+		border-radius: 11px;
 	}
 	
 	.aside-redes {
@@ -945,11 +964,12 @@ p {
 	}
 	
 	.left70px {
-		left: -50px;
+		left: -40px;
 	}
 	
 	.top80px {
-		top: 295px;
+		width: 80%;
+		top: 220px;
 	}
 	
 	.h3-formulario {
@@ -988,7 +1008,13 @@ p {
 	}
 	
 	.contenedor-vermas {
-		display: flex;
-		justify-content: center;
+		padding-left: 45px;
 	}
+	
+	.boton-galeria {
+		font-size: 17px;
+		border-radius: 11px;
+		padding: 10px 19px;
+	}
+	
 }

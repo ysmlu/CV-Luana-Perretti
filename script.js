@@ -20,16 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-
-
-
 /*ANIMACIÓN SLIDE IZQ - TÍTULO SOBRE MÍ*/
 document.addEventListener("DOMContentLoaded", function() {
 		const h2Element = document.querySelector(".h2sobremi");
 		h2Element.style.left = "-100%";
 		h2Element.classList.add("animated");
 	});
-
-
-
-
