@@ -30,7 +30,6 @@
 	display: flex; 
 	align-items: center;
 	justify-content: space-between;
-	position: fixed;
 	z-index: 50;
 }
 
@@ -80,11 +79,6 @@
 	background-color: #F7E7D8;
 } 
 
-/*.img_mujer_ilustraciones {
-	background-position: center;
-	background-repeat: no-repeat;
-	
-}*/
 
 /* PRESENTACIÓN */
 .presentacion {
@@ -121,7 +115,7 @@ h1 {
 	font-weight: 700;
 	color: #545ff5;
 	max-width: 50%;
-	z-index: 45; /*apliqué un z-index acá para que la estrella en animación no se superponga al estar más chica la pantalla pero no supe dónde agregar el z-index en la animación*/
+	z-index: 45;
 }
 
 .subtitulo {
@@ -272,7 +266,7 @@ ul li {
 }
 
 .contenedorproyectos {
-	max-width: 100%; /*¿Está bien que aplique max-width a los contenedores?*/
+	max-width: 100%;
 	padding: 80px 0px 0px 70px;
 	display: flex;
 	flex-direction: row;
@@ -314,8 +308,6 @@ h5 {
 	transform: scale(1.1);
 	transition: transform 0.3s ease;
 }
-/*Acá aplique una pequeña transición a las imágenes de mis proyectos destacados pero no se como hacer para que NO se aplique a tooodas las imágenes de mis html*/
-
 
 /*GALERÍA DE IMÁGENES*/ /*No funcionan las animaciones de la galería pero no encontré el porque*/
 
@@ -645,7 +637,7 @@ body {
 }
 
 
-.contenedor-formulario { /*CONSULTA: me gustaría hacer más rectangular todo el formulario, cómo lo hago? no lo pude resolver*/
+.contenedor-formulario { 
 	display: flex;
 	flex-direction: row;
 	column-gap: 60px;
@@ -796,7 +788,7 @@ p {
 @media screen and (max-width : 600px ){
 	/*INDEX*/
 	/*GENERAL*/
-	.h2sobremi, .titulosnaranja, h1, .luana, .caja-der-sobremi, h3 { /* decidí poner todo loque necesitaba max-width:100% juntos, se puede?*/
+	.h2sobremi, .titulosnaranja, h1, .luana, .caja-der-sobremi, h3 { 
 		max-width: 100%;
 	}
 	
@@ -1052,6 +1044,7 @@ p {
 	.zona-formulario {
 		padding: 25px 70px 50px 70px;
 	}
+	
 	/* HTML INDIV GALERÍAS */
 	
 	figure img {
