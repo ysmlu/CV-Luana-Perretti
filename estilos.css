@@ -16,7 +16,7 @@
 	z-index: 250;
 	width: 45px;
 	height: 45px;
-	background-image: url("img/estrella-cursor1-18.svg");
+	background-image: url("img/estrella-cursor1.svg");
 	background-size: cover;
 	cursor: none;
 	pointer-events: none; 
@@ -582,9 +582,6 @@ div a:active {
 	height: 23px;
 }
 
-aside img {
-	transition: transform 0.3s ease;
-}
 
 /*HTML CONTACTO Y SU FORMULARIO*/
 body {
