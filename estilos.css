@@ -963,7 +963,7 @@ p {
 	
 	.interes {
 		text-align: center;
-		width: 70%;
+		width: 80%;
 		font-size: 18px;
 	}
 	
@@ -1027,6 +1027,7 @@ p {
 	.titulo-form{
 		font-size: 40px;
 		padding: 25px 25px 25px 105px;
+		width: 90%;
 		
 	}
 	
