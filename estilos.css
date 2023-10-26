@@ -79,7 +79,6 @@
 	background-color: #F7E7D8;
 } 
 
-
 /* PRESENTACIÓN */
 .presentacion {
 	background-color: #050505;
@@ -124,10 +123,9 @@ h1 {
 	font-weight: 300;
 	color: #FFFFFF;
 	padding-top: 20px;
-
 }
 
-/*ANIMACIÓN - PRESENTACIÓN*/ /*agregué esta animación que encontré y me pareció interesante, todavía me faltan aplicar propiedades al ancho de la página para que no se mueva de lugar*/
+/*ANIMACIÓN - PRESENTACIÓN*/
 .rotate-animation-uno {
 	animation: rotate-animation 25s infinite linear;
 }
@@ -140,26 +138,23 @@ h1 {
 	right: 130px;
 }
 
-
 @keyframes rotate-animation {
 	0% {
-		transform: rotate(0deg)
+		transform: rotate(0deg);
 	}
 
 	50% {
-		transform: rotate(180deg)
+		transform: rotate(180deg);
 	}
 
 	100% {
-		transform: rotate(360deg)
+		transform: rotate(360deg);
 	}
 }
 
 .rotate-animation-uno {
-	animation: rotate-animation 15s infinite linear
+	animation: rotate-animation 15s infinite linear;
 }
-
-
 
 /* SECCIÓN SOBRE MI */
 main {
@@ -178,7 +173,7 @@ main {
 	position: absolute;
 	z-index: 1;
 	left: -50px;
-	top: 1173px; /*creo que está mal ubicar la ilustración con left y top, en caso de que si. Se podría llegar a usar en porcentajes?*/
+	top: 1173px;
 }
 
 .caja-izq-sobremi {
@@ -186,7 +181,6 @@ main {
 	flex-direction: column;
 	max-width: 38%;
 	z-index: 5;
-
 }
 
 .caja-der-sobremi {
@@ -203,18 +197,18 @@ main {
 	padding-bottom: 10px;
 	max-width: 50%;
 	position: relative;
-      left: -100%;
-      animation: slideInFromLeft 1.5s ease-in forwards;
+	left: -100%;
+	animation: slideInFromLeft 1.5s ease-in forwards;
 }
 
 @keyframes slideInFromLeft {
-      0% {
-        left: -100%;
-      }
-      100% {
-        left: 0;
-      }
-    }
+	0% {
+		left: -100%;
+	}
+	100% {
+		left: 0;
+	}
+}
 
 .parrafo {
 	font-size: 15px;
@@ -248,7 +242,6 @@ ul li {
 	color: #000000;
 }
 
-
 /* PROYECTOS DESTACADOS */
 .tituloproyecto {
 	background-color:#545ff5; 
@@ -271,10 +264,8 @@ ul li {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	flex-wrap: wrap; /*cómo hago para controlar que el wrap queden las columnas iguales en la parte de abajo, porque las imágenes no están perfectamente centradas*/
-
+	flex-wrap: wrap;
 }
-
 
 h5 {
 	font-family: 'Bricolage Grotesque', sans-serif;
@@ -309,8 +300,7 @@ h5 {
 	transition: transform 0.3s ease;
 }
 
-/*GALERÍA DE IMÁGENES*/ /*No funcionan las animaciones de la galería pero no encontré el porque*/
-
+/*GALERÍA DE IMÁGENES*/
 .nav-botonera-galeria {
 	background-color: #f5ece3;
 	padding: 10px 0px 0px 20px;
@@ -321,7 +311,6 @@ h5 {
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
-	
 }
 
 #galeria img:hover { 
@@ -337,7 +326,6 @@ h5 {
 	margin-top: 5px;
 	margin-bottom: 25px;
 	max-width: 60%;
-	
 }
 
 .boton-galeria {
@@ -366,7 +354,6 @@ h5 {
 		}
 }
 
-
 ol[aria-label=Photographs] {
 	list-style: none;
 	display: grid;
@@ -374,7 +361,6 @@ ol[aria-label=Photographs] {
 	grid-template-columns: auto auto auto;
 	grid-gap: .600rem;
 	padding: 20px 0px 60px 0px;
-	
 }
 
 ol[aria-label=Photographs] img {
@@ -388,68 +374,35 @@ ol[aria-label=Photographs] img {
 figure img {
 	display: block;
 	max-width: 100%;
-	/*max-height: 74vh;*/
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 30px;
 	z-index: 300;
 }
 
-
-figcaption h2,figcaption div {
-	contain: layout
-}
-
-figcaption h2 {
-	view-transition-name: photo-heading
-}
-
-figcaption div {
-	view-transition-name: photo-location-time
-}
-
-@keyframes fade-in {
-	0% {
-		opacity: 0
-	}
-
-	to {
-		opacity: 1
-	}
-}
-
-@keyframes fade-out {
-	0% {
-		opacity: 1
-	}
-
-	to {
-		opacity: 0
-	}
+figcaption, .boton-galeria {
+	position: relative;
+	bottom: -100px;
+	animation: slide-up 1.8s forwards;
 }
 
 @keyframes slide-up {
-	0% {
-		transform: translateY(2.5rem)
-	}
-
 	to {
-		transform: translateY(0)
+		bottom: 0;
 	}
 }
 
-@keyframes slide-down {
-	0% {
-		transform: translateY(0)
-	}
-
-	to {
-		transform: translateY(2.5rem)
-		}
+figcaption h2,figcaption div {
+	contain: layout;
 }
 
+figcaption h2 {
+	view-transition-name: photo-heading;
+}
 
-
+figcaption div {
+	view-transition-name: photo-location-time;
+}
 
 /* FOOTER: GRACIAS POR VER */
 .barra-color {
@@ -529,7 +482,6 @@ div a:active {
 	color: #fff;
 }
 
-
 .p-boton-form{
 	font-family:'Bricolage Grotesque', sans-serif;
 	font-size: 17px;
@@ -538,6 +490,7 @@ div a:active {
 	color: #FFFFFF;
 	padding-top: 27px;
 }
+
 .boton-formulario {
 	font-family:'Oswald', sans-serif;
 	font-size: 18px;
@@ -557,7 +510,6 @@ div a:active {
 	background-color: #00D3AA;
 }
 
-
 /*ASIDE*/
 .aside-redes {
 	position: fixed;
@@ -570,7 +522,6 @@ div a:active {
 	flex-direction: column;
 	align-items: center;
 	z-index: 70;
-	
 }
 
 .aside-redes a {
@@ -581,7 +532,6 @@ div a:active {
 	width: 23px;
 	height: 23px;
 }
-
 
 /*HTML CONTACTO Y SU FORMULARIO*/
 body {
@@ -613,22 +563,21 @@ body {
 
 @keyframes rotate-animation {
 	0% {
-		transform: rotate(0deg)
+		transform: rotate(0deg);
 	}
 
 	50% {
-		transform: rotate(180deg)
+		transform: rotate(180deg);
 	}
 
 	100% {
-		transform: rotate(360deg)
+		transform: rotate(360deg);
 	}
 }
 
 .rotate-animation-dos {
-	animation: rotate-animation 35s infinite linear
+	animation: rotate-animation 35s infinite linear;
 }
-
 
 .contenedor-formulario { 
 	display: flex;
@@ -682,8 +631,8 @@ form {
 	background-color: #545FF5;
 	padding: 50px 60px 30px 60px;
 	box-sizing: border-box;
-	
 }
+
 .items-formulario{
 	display: flex;
 	flex-direction: row;
@@ -694,7 +643,6 @@ form {
 .columna-izq-form, .columna-der-form {
 	display: flex;
 	flex-direction: column;
-	
 }
 
 label {
@@ -704,6 +652,7 @@ label {
 	line-height: normal;
 	color: #F5ECE3;
 }
+
 input {
 	padding: 10px 10px 10px 10px;
 	font-family: 'Open Sans', sans-serif; 
@@ -715,8 +664,6 @@ input {
 	background-color: #F5ECE3;
 	width: 260px;
 }
-
-
 
 .mensaje-form{
 	display: flex;
@@ -759,7 +706,7 @@ textarea {
 	background-color: #00D3AA;
 }
 
-	/* FOOTER: COPYRIGHT Y DIRECCIÓN */
+/* FOOTER: COPYRIGHT Y DIRECCIÓN */
 .copyright {
 	background-color: #545ff5;
 	padding: 20px 50px 20px 50px; 
@@ -775,8 +722,6 @@ p {
 	color: #FFFFFF;
 }
 
-
-
 /*MEDIA QUERIES*/
 @media screen and (max-width : 600px ){
 	/*INDEX*/
@@ -790,7 +735,6 @@ p {
 		flex-direction: column;
 		height: 230px;
 		justify-content:flex-start;
-
 	}
 	
 	.ysmlu img{
@@ -805,7 +749,6 @@ p {
 		align-items: center;
 		margin-right: 0px;
 		width: 100%;
-
 	}
 	
 	.botonera li {
@@ -816,16 +759,16 @@ p {
 		padding: 5px 10px 5px 10px;
 		font-size:16px;
 	}
+	
 	/* BANNER ILUSTRACIÓN MUJER*/
 	#backgroundmujer {
 		height: 300px;
 		background-size: cover;
 	}
 	
-	
 	/*PRESENTACIÓN*/
 	.contenedor-presentacion {
-		flex-direction: column;	
+		flex-direction: column;
 	}
 	
 	.columna-izq-presentacion {
@@ -844,6 +787,7 @@ p {
 		max-width: 70%;
 		padding-top: 15px;
 	}
+	
 	h1, .luana {
 		font-size: 48px;
 		position: relative;
@@ -866,8 +810,6 @@ p {
 		z-index: 10;
 	}
 	
-	
-	
 	/*SOBRE MÍ*/
 	.lineas-position-sobremi {
 		display: none;
@@ -880,7 +822,6 @@ p {
 	
 	.h2sobremi, h3 {
 		font-size: 30px;
-		
 	}
 	
 	.caja-izq-sobremi {
@@ -894,7 +835,6 @@ p {
 	.titulosnaranja {
 		font-size: 20px;
 	}
-	
 	
 	/*PROYECTOS DESTACADOS*/
 	.tituloproyecto {
@@ -913,24 +853,18 @@ p {
 		padding-top: 40px;
 	}
 	
-	
 	.img-proyectos {
 		width: 90%;
 		height: 90%;
 	}
-
-	/*GALERÍA*/
 	
+	/*GALERÍA*/
 	ol[aria-label=Photographs] {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
 		align-items: center;
 	}
-	
-		
-	
-
 	
 	/*GRACIAS POR VER*/
 	.graciasporver {
@@ -967,13 +901,12 @@ p {
 	.redes{
 		padding-top: 20px;
 	}
+	
 	.contenedor-boton-form {
 		display: flex;
 		align-content: center;
 		flex-direction: column;
 		align-items: center;
-		
-		
 	}
 	
 	.p-boton-form {
@@ -985,13 +918,11 @@ p {
 		font-size: 17px;
 	}
 	
-	
 	/*FOOTER*/
 	.copyright div p {
 		font-size: 10px;
 		width: 100%;
 	}
-	
 	
 	/*HTML CONTACTO */
 	.contenedor-formulario {
@@ -1011,15 +942,15 @@ p {
 		font-size: 40px;
 		padding: 25px 25px 25px 105px;
 		width: 90%;
-		
 	}
 	
 	.left70px {
 		left: -50px;
-}
+	}
+	
 	.top80px {
 		top: 295px;
-}
+	}
 	
 	.h3-formulario {
 		align-items: flex-start;
@@ -1029,7 +960,7 @@ p {
 	.items-formulario {
 		flex-direction: column;
 	}
-
+	
 	.submit {
 		width: auto;
 	}
@@ -1039,7 +970,6 @@ p {
 	}
 	
 	/* HTML INDIV GALERÍAS */
-	
 	figure img {
 		width: 85%;
 		height: 85%;
@@ -1060,7 +990,5 @@ p {
 	.contenedor-vermas {
 		display: flex;
 		justify-content: center;
-		
-	}	
+	}
 }
-	
