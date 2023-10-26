@@ -972,6 +972,7 @@ p {
 		flex-direction: column;
 		align-items: center;
 		text-align:left;
+		padding-bottom: 23px;
 	}
 	
 	.titulocontacto {
@@ -1017,7 +1018,7 @@ p {
 	}
 	
 	form {
-		padding: 25px 50px 5px 50px;
+		padding: 25px 40px 5px 40px;
 	}
 	
 	input {
@@ -1051,6 +1052,9 @@ p {
 		width: auto;
 	}
 	
+	.zona-formulario {
+		padding: 25px 70px 50px 70px;
+	}
 	/* HTML INDIV GALERÍAS */
 	
 	figure img {
