@@ -408,39 +408,6 @@ figcaption div {
 	view-transition-name: photo-location-time
 }
 
-/*estas transiciones no funcionan, no se porqué*/
-::view-transition-new(photo-heading):only-child,::view-transition-new(photo-location-time):only-child,::view-transition-new(photo-meta):only-child {
-	animation: .3s ease var(--animation-delay, 0s) both fade-in,.3s ease var(--animation-delay, 0s) both slide-up
-}
-
-::view-transition-new(photo-heading):only-child {
-	animation-delay: 50ms
-}
-
-::view-transition-new(photo-location-time):only-child {
-	animation-delay: .1s
-}
-
-::view-transition-new(photo-meta):only-child {
-	animation-delay: .15s
-}
-
-::view-transition-old(photo-heading):only-child,::view-transition-old(photo-location-time):only-child,::view-transition-old(photo-meta):only-child {
-	animation: .2s ease var(--animation-delay, 0s) both fade-out,.2s ease var(--animation-delay, 0s) both slide-down
-}
-
-::view-transition-old(photo-heading):only-child {
-	animation-delay: .15s
-}
-
-::view-transition-old(photo-location-time):only-child {
-	animation-delay: .1s
-}
-
-::view-transition-old(photo-meta):only-child {
-	animation-delay: 50ms
-}
-
 @keyframes fade-in {
 	0% {
 		opacity: 0
@@ -480,6 +447,7 @@ figcaption div {
 		transform: translateY(2.5rem)
 		}
 }
+
 
 
 
@@ -589,6 +557,34 @@ div a:active {
 	background-color: #00D3AA;
 }
 
+
+/*ASIDE*/
+.aside-redes {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	background-color: #545FF5; 
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 70;
+	
+}
+
+.aside-redes a {
+	margin-top: 5px;
+}
+
+.icon {
+	width: 23px;
+	height: 23px;
+}
+
+aside img {
+	transition: transform 0.3s ease;
+}
 
 /*HTML CONTACTO Y SU FORMULARIO*/
 body {
