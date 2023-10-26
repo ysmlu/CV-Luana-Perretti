@@ -56,7 +56,7 @@
 	font-weight: 700;
 	margin: 35px;
 	transition: 0.2s;
-	padding: 8px;
+	padding: 8px 12px 8px 12px;
 	border-radius: 9px;
 }
 
@@ -71,10 +71,12 @@
 }
 
 /* PORTADA MUJER */
-#backgroundmujer img {
-	background-repeat: no-repeat;
+#backgroundmujer {
+	background-image: url("img/portadamujer.jpg");
+	background-size: cover;
 	background-position: center;
-	height: 100%;
+	background-repeat: no-repeat;
+	height: 440px;
 	width: 100%;
 } 
 
@@ -280,7 +282,7 @@ ul li {
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap; /*cómo hago para controlar que el wrap queden las columnas iguales en la parte de abajo, porque las imágenes no están perfectamente centradas*/
-	/*column-gap: 20px; pendiente de colocar cuando corrija el problema del centrado*/
+
 }
 
 
@@ -531,10 +533,10 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	/*justify-content: center;*/
+	justify-content: center;
 	background-color:#ff6e00; 
-	padding-bottom: 40px;
-	column-gap: 6%; /*para mi: pasar a px*/
+	padding-bottom: 32px;
+	column-gap: 75px; 
 }
 
 .titulocontacto { 
@@ -542,7 +544,7 @@ h3 {
 	font-size: 25px;
 	font-weight: 600;
 	color: #FFFFFF;
-	padding: 30px 0px 0px 50px;
+	padding: 22px 0px 0px 50px;
 }
 
 .redes {
@@ -550,7 +552,7 @@ h3 {
 	font-size: 15px;
 	font-weight: 600;
 	color: #FFFFFF;
-	padding-top: 35px;
+	padding-top: 25px;
 	
 }
 
@@ -571,9 +573,6 @@ div a:active {
 	color: #fff;
 }
 
-.contenedor-boton-form{
-	margin-top: 35px;
-}
 
 .p-boton-form{
 	font-family:'Bricolage Grotesque', sans-serif;
@@ -581,10 +580,11 @@ div a:active {
 	font-weight: 300;
 	line-height: normal;
 	color: #FFFFFF;
+	padding-top: 27px;
 }
 .boton-formulario {
 	font-family:'Oswald', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 700;
 	line-height: normal;
 	background-color: #5151FC;
@@ -603,6 +603,9 @@ div a:active {
 
 
 /*HTML CONTACTO Y SU FORMULARIO*/
+body {
+	height: 100vh;
+}
 
 .lineas-position-contacto {
 	position: absolute;
@@ -698,12 +701,13 @@ form {
 	background-color: #545FF5;
 	padding: 50px 60px 30px 60px;
 	box-sizing: border-box;
-	width: 100%;
+	
 }
 .items-formulario{
 	display: flex;
 	flex-direction: row;
 	column-gap: 50px;
+	justify-content: space-between;
 }
 
 .columna-izq-form, .columna-der-form {
@@ -720,7 +724,7 @@ label {
 	color: #F5ECE3;
 }
 input {
-	padding: 10px;
+	padding: 10px 10px 10px 10px;
 	font-family: 'Open Sans', sans-serif; 
 	font-size: 15px;
 	font-weight: 400;
@@ -728,7 +732,10 @@ input {
 	border: none;
 	margin: 5px 0px 30px 0px;
 	background-color: #F5ECE3;
+	width: 260px;
 }
+
+
 
 .mensaje-form{
 	display: flex;
@@ -764,7 +771,7 @@ textarea {
 	cursor: pointer;
 	border: none;
 	padding: 5px 25px 6px 25px;
-	width: 100%;
+	width: 18%;
 }
 
 .submit:hover {
@@ -775,7 +782,6 @@ textarea {
 .copyright {
 	background-color: #545ff5;
 	padding: 20px 50px 20px 50px; 
-	column-gap: 5%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -830,14 +836,9 @@ p {
 		font-size:16px;
 	}
 	/* BANNER ILUSTRACIÓN MUJER*/
-	#backgroundmujer img {
-		background-size: 200% auto;
+	#backgroundmujer {
+		height: 300px;
 	}
-	
-	
-	
-	
-	
 	
 	
 	/*PRESENTACIÓN*/
@@ -853,6 +854,8 @@ p {
 	.columna-izq-presentacion img{
 		width: 85%;
 		height: 85%;
+		position: relative;
+		z-index: 45;
 	}
 	
 	.columna-der-presentacion {
@@ -861,6 +864,8 @@ p {
 	}
 	h1, .luana {
 		font-size: 48px;
+		position: relative;
+		z-index: 50;
 	}
 	
 	.subtitulo {
@@ -873,7 +878,12 @@ p {
 	
 	.right130px {
 		right: 40px;
-}
+	}
+	
+	.position-absolute right130px bottom110px rotate-animation-uno {
+		z-index: 10;
+	}
+	
 	
 	
 	/*SOBRE MÍ*/
@@ -967,8 +977,13 @@ p {
 	.titulocontacto {
 		padding-top: 20px;
 		padding-left: 0px;
+		width: 26%;
+		padding-right: 50px;
 	}
 	
+	.redes{
+		padding-top: 20px;
+	}
 	.contenedor-boton-form {
 		display: flex;
 		align-content: center;
@@ -993,10 +1008,9 @@ p {
 		font-size: 10px;
 		width: 100%;
 	}
+	
+	
+	/* HTML INDIV GALERÍAS */
+	
 }
-	
-	
-	
-	
-	
 	
