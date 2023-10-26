@@ -72,7 +72,7 @@
 /* PORTADA MUJER */
 #backgroundmujer {
 	background-image: url("img/portadamujer.jpg");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 440px;
@@ -833,6 +833,7 @@ p {
 	/* BANNER ILUSTRACIÓN MUJER*/
 	#backgroundmujer {
 		height: 300px;
+		background-size: cover;
 	}
 	
 	
